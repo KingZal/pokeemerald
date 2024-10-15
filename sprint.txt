@@ -1,5 +1,34 @@
+Remember, to open the project: open Powershell in Admin(?), run some update command to start Ubuntu, move to decomps folder using
+cd Documents/decomps/pokeemerald-expansion (or something along those lines)
+
+The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in eight gyms and the elite four?
+
 Project Ideas:
 -You are a parent. You have a daughter and a stay-at-home brother who helps take care of the household. Whatever pokemon you pick, 
 your daughter picks the opposite. Then they go on the run, and you have to chase them across Hoenn.
 
 -Indoors project. You are inside a tower and there's a tournament, or something. 
+
+Added carpet to protagonist's bedroom. Now to add secret side hallway with no music, with door that gives the message "You are not ready yet."
+Still need to get poryscript working, apparently...
+
+Location ideas:
+-Strip mall with a gym inside and some unusuable boutique stores
+
+Character ideas:
+-
+
+Starters:
+-Grass, Ground, Poison
+
+Grass: Chikorita, Seedot
+Poison: Ghastly
+Ground: Larvitar
+
+er...okay, how about: Larvitar vs. Gible vs. Ralts or Alolan Sandshrew ...no
+But I edited Alolan Sandshrew to give him some better stats, later I'll give him new moves. Appears as though his learnset is different depending on the gen
+
+
+
+"This is a hold up...give me your high school ring!"
+"You know what I'd look like with blonde hair, Althea? Like a grilled cheese sandwich!"
