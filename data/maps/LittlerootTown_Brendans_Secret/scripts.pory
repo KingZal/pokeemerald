@@ -1,0 +1,16 @@
+mapscripts LittlerootTown_Brendans_Secret_MapScripts {}
+
+script LittlerootTown_Brendan_SecretRoomEntrance {
+	lockall
+    // waitmovement 0
+    msgbox("You are not ready yet.")
+    applymovement(OBJ_EVENT_ID_PLAYER, Move_Me)
+    releaseall
+}
+
+raw `
+Move_Me:
+    walk_down
+    step_end
+
+`

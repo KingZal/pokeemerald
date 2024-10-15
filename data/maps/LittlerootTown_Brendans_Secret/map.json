@@ -1,0 +1,41 @@
+{
+  "id": "MAP_LITTLEROOT_TOWN_BRENDANS_SECRET",
+  "name": "LittlerootTown_Brendans_Secret",
+  "layout": "LAYOUT_LITTLEROOT_TOWN_BRENDANS_SECRET",
+  "music": "MUS_ABNORMAL_WEATHER",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 0,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LittlerootTown_Brendan_SecretRoomEntrance"
+    }
+  ]
+}
