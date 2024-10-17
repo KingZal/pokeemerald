@@ -1,0 +1,38 @@
+mapscripts DewfordTown_House2_MapScripts {}
+
+script DewfordTown_House2_EventScript_Boy {
+	lock
+	faceplayer
+	msgbox (DewfordTown_House2_Text_BrawlySoCool, MSGBOX_DEFAULT)
+	release
+}
+
+text DewfordTown_House2_Text_BrawlySoCool {
+	"Wow, you bothered to cross the sea\n"
+	"to visit DEWFORD?\p"
+	"Did you maybe come here because you\n"
+	"heard about BRAWLY?\p"
+	"He's so cool…\n"
+	"Everyone idolizes him.$"
+}
+
+-
+
+\n for 2nd row
+\l to scroll the text after 2nd row
+\p to clear the text box and start the next line from the 1st row
+$ to ???
+
+or just msgbox(format())
+
+
+"However, it shouldn't be hard to convert to poryscript as you really just need the ( ) around each macro and the { } around each script"
+
+-
+
+// unverified
+Route2_EventScript_BCTim: {
+	trainerbattle_single TRAINER_BC_TIM, Route2_Text_BCTimIntro, Route2_Text_BCTimDefeated
+	msgbox (Route2_Text_BCTimPostBattle, MSGBOX_AUTOCLOSE)
+}
+	

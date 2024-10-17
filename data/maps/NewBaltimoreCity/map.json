@@ -23,6 +23,27 @@
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 23,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_APARTMENT_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_POKEMON_CENTER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -1,0 +1,16 @@
+mapscripts NewBaltimoreCity_Apartment_1F_MapScripts {}
+
+script NewBaltimore_Apartment_Trainer {
+	lock
+	faceplayer
+	msgbox (NewBaltimore_Apartment_Narrow_Head, MSGBOX_DEFAULT)
+	release
+}
+
+text NewBaltimore_Apartment_Narrow_Head {
+    "It's like,\n"
+    "My heads numb,\l"
+    "Today...$"
+}
+
+raw ``

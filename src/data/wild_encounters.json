@@ -7,17 +7,17 @@
         {
           "type": "land_mons",
           "encounter_rates": [
-            20,
-            20,
+            17,
+            17,
             10,
             10,
             10,
             10,
             5,
             5,
-            4,
-            4,
-            1,
+            5,
+            5,
+            5,
             1
           ]
         },
@@ -11488,6 +11488,75 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_GOLBAT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_NEW_BALTIMORE_CITY",
+          "base_label": "gNewBaltimoreCity_1",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 10,
+                "species": "SPECIES_CYNDAQUIL"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_TOTODILE"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_CHIKORITA"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_SQUIRTLE"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_TREECKO"
+              },
+              {
+                "min_level": 7,
+                "max_level": 8,
+                "species": "SPECIES_TORCHIC"
+              },
+              {
+                "min_level": 7,
+                "max_level": 11,
+                "species": "SPECIES_PIPLUP"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_TURTWIG"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_CHIMCHAR"
+              },
+              {
+                "min_level": 7,
+                "max_level": 10,
+                "species": "SPECIES_ROWLET"
+              },
+              {
+                "min_level": 7,
+                "max_level": 10,
+                "species": "SPECIES_FROAKIE"
+              },
+              {
+                "min_level": 7,
+                "max_level": 10,
+                "species": "SPECIES_EEVEE"
               }
             ]
           }
