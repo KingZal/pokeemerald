@@ -3,22 +3,16 @@
   "name": "NewBaltimoreCity",
   "layout": "LAYOUT_NEW_BALTIMORE_CITY",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_VIRIDIAN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_NEW_BALTIMORE_CITY_NE",
-      "offset": 0,
-      "direction": "right"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
@@ -29,13 +23,6 @@
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",
       "dest_warp_id": "3"
-    },
-    {
-      "x": 26,
-      "y": 22,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_BALTIMORE_CITY_APARTMENT1_1F",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

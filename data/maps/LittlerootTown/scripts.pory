@@ -1,20 +1,3 @@
-// mapscripts LittlerootTown_MapScripts {}
-
-script LittlerootTown_EventScript_Debug_Pokemon {
-	lockall
-	showmonpic(SPECIES_DARKRAI, 10, 3)
-	msgbox("Wow! Is that Darkrai?!")
-	givemon(SPECIES_DARKRAI, 20, ITEM_MASTER_BALL)
-	PlayFanfare(MUS_SLOTS_JACKPOT)
-	setflag(FLAG_SYS_POKEMON_GET)
-	hidemonpic
-	// call(NicknameBoxMon)
-	waitmessage
-	releaseall
-	end
-
-}
-
 raw `
 .set LOCALID_TWIN, 1
 .set LOCALID_MOM, 4
