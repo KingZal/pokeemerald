@@ -1,3 +1,22 @@
+script LittlerootTown_Foppy79 {
+	lock
+	faceplayer
+	msgbox (LittlerootTown_Foppy79_Speaks, MSGBOX_DEFAULT)
+	release
+}
+
+text LittlerootTown_Foppy79_Speaks {
+	format("There is a pipe bomb in your mailbox.")
+	// "There is a pipe bomb\n"
+	# "in your mailbox.$"
+}
+
+script LittlerootTown_flower_sign {
+	lockall
+	msgbox(format("YOU WON'T LAY DOWN YOUR LIFE FOR ME BEFORE YOU'RE SUPPOSED TO"))
+	releaseall
+}
+
 raw `
 .set LOCALID_TWIN, 1
 .set LOCALID_MOM, 4

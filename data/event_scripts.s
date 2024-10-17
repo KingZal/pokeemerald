@@ -1079,3 +1079,9 @@ EventScript_VsSeekerChargingDone::
 	
 
 	.include "data/maps/NewBaltimoreCity/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_NE/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_Apartment_1F/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_Pokemon_Center/scripts.inc"

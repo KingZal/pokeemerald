@@ -4430,6 +4430,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/NewBaltimoreCity/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_NE",
+      "name": "NewBaltimoreCity_NE_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NewBaltimoreCity_NE/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_NE/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_APARTMENT_1F",
+      "name": "NewBaltimoreCity_Apartment_1F_Layout",
+      "width": 25,
+      "height": 4,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/NewBaltimoreCity_Apartment_1F/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_Apartment_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_POKEMON_CENTER",
+      "name": "NewBaltimoreCity_Pokemon_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/NewBaltimoreCity_Pokemon_Center/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_Pokemon_Center/map.bin"
     }
   ]
 }

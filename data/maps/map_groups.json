@@ -93,7 +93,8 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "NewBaltimoreCity"
+    "NewBaltimoreCity",
+    "NewBaltimoreCity_NE"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -101,7 +102,9 @@
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab",
-    "LittlerootTown_Brendans_Secret"
+    "LittlerootTown_Brendans_Secret",
+    "NewBaltimoreCity_Apartment_1F",
+    "NewBaltimoreCity_Pokemon_Center"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
