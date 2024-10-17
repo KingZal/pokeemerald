@@ -3,13 +3,6 @@ cd Documents/decomps/pokeemerald-expansion (or something along those lines)
 
 The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in eight gyms and the elite four?
 
-Current To-Do:
--Make Darkrai item go away after picking it up
--Get around "obey" problem
--Move Rustboro gym entrance to New Baltimore building
--Add other seven gyms to New Baltimore building
--Ask server if One Block Game is viable, and if more detailed documentation for Poryscript exists (one with examples of functions)
-
 Project Ideas:
 -You are a parent. You have a daughter and a stay-at-home brother who helps take care of the household. Whatever pokemon you pick, 
 your daughter picks the opposite. Then they go on the run, and you have to chase them across Hoenn.
