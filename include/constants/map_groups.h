@@ -65,16 +65,19 @@
 #define MAP_UNDERWATER_ROUTE125   (56 | (0 << 8))
 #define MAP_NEW_BALTIMORE_CITY    (57 | (0 << 8))
 #define MAP_NEW_BALTIMORE_CITY_NE (58 | (0 << 8))
+#define MAP_NEW_BALTIMORE_CITY_SE (59 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
-#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F    (1 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_BRENDANS_SECRET      (5 | (1 << 8))
-#define MAP_NEW_BALTIMORE_CITY_APARTMENT_1F      (6 | (1 << 8))
-#define MAP_NEW_BALTIMORE_CITY_POKEMON_CENTER    (7 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F        (0 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F        (1 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F            (2 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F            (3 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB     (4 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_BRENDANS_SECRET          (5 | (1 << 8))
+#define MAP_NEW_BALTIMORE_CITY_APARTMENT_1F          (6 | (1 << 8))
+#define MAP_NEW_BALTIMORE_CITY_POKEMON_CENTER        (7 | (1 << 8))
+#define MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING   (8 | (1 << 8))
+#define MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING_2 (9 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))
@@ -405,6 +408,7 @@
 #define MAP_TERRA_CAVE_END                           (105 | (24 << 8))
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
+#define MAP_TRAINSPOTTING_CAVERN                     (108 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

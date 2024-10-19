@@ -1085,3 +1085,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewBaltimoreCity_Apartment_1F/scripts.inc"
 
 	.include "data/maps/NewBaltimoreCity_Pokemon_Center/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_SE/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_House_Trainspotting/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_House_Trainspotting_2/scripts.inc"
+
+	.include "data/maps/Trainspotting_Cavern/scripts.inc"

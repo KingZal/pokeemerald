@@ -28,6 +28,11 @@ or just msgbox(format())
 
 "However, it shouldn't be hard to convert to poryscript as you really just need the ( ) around each macro and the { } around each script"
 
+alias mo='make -j && <path_to_mgba_executable> *.gba'
+"breaks down if you have more than one .gba file in the directory 
+but I swap between different projects so frequently that it helps to just pull up whatever one is in the directory"
+"<path to mgba executable> is just where you have the .exe stored for mgba"
+
 -
 
 // unverified

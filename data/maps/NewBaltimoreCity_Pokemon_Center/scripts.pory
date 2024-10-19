@@ -1,11 +1,51 @@
-mapscripts NewBaltimoreCity_Pokemon_Center_MapScripts {}
+mapscripts NewBaltimoreCity_Pokemon_Center_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION: NewBaltimore_PokemonCenter_OnTransition
+	MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
 
-raw `
+script NewBaltimore_PokemonCenter_OnTransition {
+	setrespawn(HEAL_LOCATION_NEW_BALTIMORE_CITY)
+	end
+}
 
-NewBaltimore_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
-	call Common_EventScript_PkmnCenterNurse
+script PokeCenter_Employee_Simple {
+	setvar(VAR_0x800B, 1)
+	call(Common_EventScript_PkmnCenterNurse)
 	waitmessage
 	waitbuttonpress
 	release
-	end `
+	end
+}
+
+script Pokemart_Employee {
+	lock
+	faceplayer
+	msgbox("Want me to heal your party?", MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES) {
+		incrementgamestat(GAME_STAT_USED_POKECENTER)
+        special(HealPlayerParty)
+        msgbox("Come again soon.")
+        waitmessage
+        release
+        end
+	}
+	else {
+        msgbox("Okay.", MSGBOX_NPC)
+    }
+}
+
+
+// EventScript_PkmnCenterNurse_TakeAndHealPkmn::
+// 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Turn @ Changed from Common_Movement_WalkInPlaceFasterLeft to force the follower to enter their Poké Ball
+// 	waitmovement 0
+// 	dofieldeffect FLDEFF_POKECENTER_HEAL
+// 	waitfieldeffect FLDEFF_POKECENTER_HEAL
+// 	applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterDown
+// 	waitmovement 0
+// 	special HealPlayerParty
+// 	callnative UpdateFollowingPokemon
+// 	return
+
+raw `
+
+`
