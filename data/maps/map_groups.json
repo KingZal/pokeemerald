@@ -94,7 +94,8 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "NewBaltimoreCity",
-    "NewBaltimoreCity_NE"
+    "NewBaltimoreCity_NE",
+    "NewBaltimoreCity_SE"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -104,7 +105,9 @@
     "LittlerootTown_ProfessorBirchsLab",
     "LittlerootTown_Brendans_Secret",
     "NewBaltimoreCity_Apartment_1F",
-    "NewBaltimoreCity_Pokemon_Center"
+    "NewBaltimoreCity_Pokemon_Center",
+    "NewBaltimoreCity_House_Trainspotting",
+    "NewBaltimoreCity_House_Trainspotting_2"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -434,7 +437,8 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "Trainspotting_Cavern"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

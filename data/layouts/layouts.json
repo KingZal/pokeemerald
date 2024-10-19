@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_NEW_BALTIMORE_CITY_NE",
       "name": "NewBaltimoreCity_NE_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 32,
+      "height": 32,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/NewBaltimoreCity_NE/border.bin",
@@ -4460,6 +4460,46 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/NewBaltimoreCity_Pokemon_Center/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity_Pokemon_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_SE",
+      "name": "NewBaltimoreCity_SE_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NewBaltimoreCity_SE/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_SE/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING",
+      "name": "NewBaltimoreCity_House_Trainspotting_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewBaltimoreCity_House_Trainspotting/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_House_Trainspotting/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING_2",
+      "name": "NewBaltimoreCity_House_Trainspotting_2_Layout",
+      "width": 6,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewBaltimoreCity_House_Trainspotting_2/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_House_Trainspotting_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRAINSPOTTING_CAVERN",
+      "name": "Trainspotting_Cavern_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Trainspotting_Cavern/border.bin",
+      "blockdata_filepath": "data/layouts/Trainspotting_Cavern/map.bin"
     }
   ]
 }
