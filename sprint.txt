@@ -7,9 +7,7 @@ eight gyms and the elite four? Do we have to?
 
 To-Do List:
 -Fix trainer
--Replace border trees to remove secret base, or change tile property
--Remove gym badge requirements
--Increase XP gain (did I do that? no seriously)
+-Increase XP gain (just did, I think)
 -Can we edit metatile property for one in-game tile?
 
 Further down the road To-Do List:
