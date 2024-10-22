@@ -369,8 +369,7 @@ EventScript_EndSurface::
 	end
 
 EventScript_DigCommon:
-	callfunc ScrFunc_IsFollowerFieldMoveUser
-	.2byte VAR_0x8004
+	isfollowerfieldmoveuser VAR_0x8004
 	setfieldeffectargument 3, VAR_0x8004 @ skip pose if true
 	dofieldeffect FLDEFF_USE_DIG
 	waitstate
