@@ -54,7 +54,7 @@ Pokemart_Employee_1:
 	end
 
 
-# 49 "data/maps/NewBaltimoreCity_Pokemon_Center/scripts.pory"
+# 39 "data/maps/NewBaltimoreCity_Pokemon_Center/scripts.pory"
 
 
 Pokemart_Employee_Text_0:

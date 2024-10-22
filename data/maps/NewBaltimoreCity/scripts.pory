@@ -1,16 +1,80 @@
 mapscripts NewBaltimoreCity_MapScripts {}
 
-script NewBaltimore_Outside_Trainer {
+// Route104_EventScript_Boy2::
+// 	lock
+// 	faceplayer
+// 	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route104_EventScript_ReceivedBulletSeed
+// 	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
+// 	giveitem ITEM_TM_BULLET_SEED
+// 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+// 	setflag FLAG_RECEIVED_TM_BULLET_SEED
+// 	release
+// 	end
+
+script NewBaltimore_TM_Gift {
 	lock
 	faceplayer
-	msgbox (NewBaltimore_Apartment_EZ_HOE, MSGBOX_DEFAULT)
+	if (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
+		msgbox(Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT) // placeholder
+		giveitem(ITEM_TM_FLAMETHROWER)
+	} elif (var(VAR_RESULT) == FALSE) {
+		goto(Common_EventScript_ShowBagIsFull)		
+	}
+	else {
+		msgbox (NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT)
+	}
+	setflag(FLAG_RECEIVED_TM_FLAMETHROWER)
+	release
+	end
+}
+
+text Route104_Text_LikeFillingMouthWithSeedsTakeThis {
+	"Boy do I love the smell of napalm\n"
+	"in the morning, don't you?\p"
+	"You can have this, so you try it out!\p"
+	"Use it on a POKéMON, and it will learn\n"
+	"a move for setting shit on fire.$"
+}
+	
+
+// turn this into battle later?
+script NewBaltimore_Outside_Trainer { 
+	lock
+	faceplayer
+	msgbox (NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT)
 	release
 }
 
-text NewBaltimore_Apartment_EZ_HOE {
+text NewBaltimore_Trainer_EZ_HOE {
     "Easy come,\n"
     "Easy go,\l"
     "Easily I shoot you hoe."
+}
+
+// first trainer test
+// finish here:  https://www.youtube.com/watch?v=rHvIWuZSy6I
+script NewBaltimore_Trainer_Taraneh { // this isn't working right
+	trainerbattle_single(TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro)
+	msgbox(Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE)
+	waitmessage
+	end
+	// more trainer macros can be found under event.inc
+	// edit trainer information under trainers.party
+}
+
+text Trainer_Taraneh_Intro {
+	"There is a time and place\n"
+	"for trainer battles.\p"
+	"Any time, any place."
+}
+
+text Trainer_Taraneh_Outro {
+	"You got me!"
+}
+
+text Trainer_Taraneh_Post_Battle {
+	"I'd rematch you but I\n"
+	"haven't figured it out yet."
 }
 
 // Route133_EventScript_Beck::
