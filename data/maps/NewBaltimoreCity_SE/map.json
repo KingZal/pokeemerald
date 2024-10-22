@@ -12,7 +12,13 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_NEW_BALTIMORE_CITY_NE",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
   "object_events": [
 
   ],
@@ -23,6 +29,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 31,
+      "y": 14,
+      "elevation": 0,
+      "item": "ITEM_LINKING_CORD",
+      "flag": "FLAG_TEMP_1"
+    }
   ]
 }

@@ -25,6 +25,9 @@ $ to ???
 
 or just msgbox(format())
 
+-
+
+HOW TO ADD TRAINERS: ???
 
 "However, it shouldn't be hard to convert to poryscript as you really just need the ( ) around each macro and the { } around each script"
 

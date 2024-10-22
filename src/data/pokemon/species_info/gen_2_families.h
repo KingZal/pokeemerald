@@ -204,7 +204,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CYNDAQUIL] =
     {
         .baseHP        = 39,
-        .baseAttack    = 52,
+        .baseAttack    = 62,
         .baseDefense   = 43,
         .baseSpeed     = 65,
         .baseSpAttack  = 60,
@@ -266,7 +266,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_QUILAVA] =
     {
         .baseHP        = 58,
-        .baseAttack    = 64,
+        .baseAttack    = 74,
         .baseDefense   = 58,
         .baseSpeed     = 80,
         .baseSpAttack  = 80,
@@ -337,7 +337,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_TYPHLOSION] =
     {
         .baseHP        = 78,
-        .baseAttack    = 84,
+        .baseAttack    = 94,
         .baseDefense   = 78,
         .baseSpeed     = 100,
         .baseSpAttack  = 109,

@@ -16873,3 +16873,38 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+/* THESE ARE MINE */
+/* CTRL+F ZAL */
+
+=== TRAINER_TARANEH ===
+Name: Taraneh
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+
+Snivy
+Level: 5  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe 
+
+/*
+=== TRAINER_TARANEH ===
+Name: Taraneh
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Male
+Double Battle: No
+
+Snivy (F)  
+Ability: Overgrow  
+Level: 5  
+Tera Type: Grass  
+EVs: 5 HP / 3 SpD  
+Timid Nature  
+- Tackle  
+- Leer  
+- Vine Whip  
+*/

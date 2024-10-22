@@ -1,12 +1,21 @@
 Remember, to open the project: open Powershell in Admin(?), run some update command to start Ubuntu, move to decomps folder using
 cd Documents/decomps/pokeemerald-expansion (or something along those lines)
 
-The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in eight gyms and the elite four? Do we have to?
+The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in 
+eight gyms and the elite four? Do we have to?
+
 
 To-Do List:
--Create trainers
--Create real apartment interior
--Create trainspotting side quest
+-Fix trainer
+-Replace border trees to remove secret base, or change tile property
+-Remove gym badge requirements
+-Increase XP gain (did I do that? no seriously)
+-Can we edit metatile property for one in-game tile?
+
+Further down the road To-Do List:
+-Go through a porymap tileset tutorial
+-If not gym members, who?
+-Create trainspotting side quest (can't test this until we unlock Dive)
 
 Exploration Ideas:
 -Mark Renton: "I accidentally flushed my [key item] down the toilet. Can you help me fish it out?" 
@@ -16,16 +25,33 @@ Trainspotting reference - toilet (use placeholder for now) leads to underwater d
 
 Design Ideas: 
 -Dark blue nighttime aesthetic, or use one of these https://github.com/pret/pokeemerald/wiki/Feature-Branches#Day-Night-Systems
+    -If the former, imagine the city is in a permanent dusk or something
+-Increased exp gain
+    -"Your parental instincts have granted you a [better understanding of how to train] your pokemon."
+-Three rooms per apartment floor, all of which have door signs (but not all of them are openable and/or occupied)
 
+Kid Ideas:
+-A villain (duh)
+-A known villain
+-On a quest to beat all eight region gyms. Eventually becomes the Elite Four champion.
 
-Added carpet to protagonist's bedroom. Now to add secret side hallway with no music, with door that gives the message "You are not ready yet."
-Still need to get poryscript working, apparently...
+Added carpet to protagonist's bedroom. Now to add secret side hallway with no music, with door that gives the message 
+"You are not ready yet."
 
 Location ideas:
 -Strip mall with a gym inside and some unusuable boutique stores
+-Market District (where you can find move deleter, move reminder, etc.)
+-A document forger. Forges you a trainer card with all eight badges once your child has 
+-Hostel filled with visiting trainers. Changes after every gym badge, or some other important event
+-Alleyways with more trainers and pokemon
 
 Character ideas:
 -
+
+Script Ideas:
+-Black screen followed by textbox showing baseball/football play by play
+-Vanilla intro is followed up by black screen that says "Twenty years have passed. It's now the new generation's turn." 
+    -("Or is it?")
 
 Starters:
 -Grass, Ground, Poison

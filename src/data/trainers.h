@@ -42183,3 +42183,35 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 16880
+    [TRAINER_TARANEH] =
+    {
+#line 16881
+        .trainerName = _("Taraneh"),
+#line 16882
+        .trainerClass = TRAINER_CLASS_BEAUTY,
+#line 16883
+        .trainerPic = TRAINER_PIC_BEAUTY,
+        .encounterMusic_gender = 
+#line 16884
+F_TRAINER_FEMALE | 
+#line 16885
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+#line 16886
+        .doubleBattle = FALSE,
+        .partySize = 1,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 16888
+            .species = SPECIES_SNIVY,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16890
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 30, 0, 0),
+#line 16889
+            .lvl = 5,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },
