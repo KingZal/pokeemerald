@@ -46,17 +46,29 @@ NewBaltimore_Outside_Trainer::
 	return
 
 
-NewBaltimore_Trainer_Taraneh::
+NewBaltimore_You_Did_It::
+# 55 "data/maps/NewBaltimoreCity/scripts.pory"
+	lock
+# 56 "data/maps/NewBaltimoreCity/scripts.pory"
+	faceplayer
 # 57 "data/maps/NewBaltimoreCity/scripts.pory"
-	trainerbattle_single TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro
+	msgbox NewBaltimore_Trainer_Done, MSGBOX_DEFAULT
 # 58 "data/maps/NewBaltimoreCity/scripts.pory"
+	release
+	return
+
+
+NewBaltimore_Trainer_Taraneh::
+# 68 "data/maps/NewBaltimoreCity/scripts.pory"
+	trainerbattle_single TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro
+# 69 "data/maps/NewBaltimoreCity/scripts.pory"
 	msgbox Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE
-# 59 "data/maps/NewBaltimoreCity/scripts.pory"
+# 70 "data/maps/NewBaltimoreCity/scripts.pory"
 	waitmessage
 	end
 
 
-# 85 "data/maps/NewBaltimoreCity/scripts.pory"
+# 96 "data/maps/NewBaltimoreCity/scripts.pory"
 
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis::
@@ -73,17 +85,21 @@ NewBaltimore_Trainer_EZ_HOE::
 	.string "Easy go,\l"
 	.string "Easily I shoot you hoe.$"
 
+NewBaltimore_Trainer_Done::
+# 61 "data/maps/NewBaltimoreCity/scripts.pory"
+	.string "Congratulations!$"
+
 Trainer_Taraneh_Intro::
-# 65 "data/maps/NewBaltimoreCity/scripts.pory"
+# 76 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "There is a time and place\n"
 	.string "for trainer battles.\p"
 	.string "Any time, any place.$"
 
 Trainer_Taraneh_Outro::
-# 71 "data/maps/NewBaltimoreCity/scripts.pory"
+# 82 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "You got me!$"
 
 Trainer_Taraneh_Post_Battle::
-# 75 "data/maps/NewBaltimoreCity/scripts.pory"
+# 86 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "I'd rematch you but I\n"
 	.string "haven't figured it out yet.$"

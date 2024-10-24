@@ -39,12 +39,6 @@ with open("./include/constants/tms_hms.h", 'r') as file:
         if not 'MOVE_' + x in tm_moves:
             tm_moves.append('MOVE_' + x)
 
-# scan Technique Manual
-with open("./src/data/technique_manual.h", 'r') as file:
-    for x in re.findall(r'\.move = (MOVE_.*),', file.read()):
-        if not x in tm_moves:
-            manual_moves.append(x)
-
 # look up universal moves to exclude them
 universal_moves = []
 with open("./src/pokemon.c", "r") as file:

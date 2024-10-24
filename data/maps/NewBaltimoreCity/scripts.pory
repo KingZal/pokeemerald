@@ -51,6 +51,17 @@ text NewBaltimore_Trainer_EZ_HOE {
     "Easily I shoot you hoe."
 }
 
+script NewBaltimore_You_Did_It { 
+	lock
+	faceplayer
+	msgbox (NewBaltimore_Trainer_Done, MSGBOX_DEFAULT)
+	release
+}
+
+text NewBaltimore_Trainer_Done {
+    "Congratulations!"
+}
+
 // first trainer test
 // finish here:  https://www.youtube.com/watch?v=rHvIWuZSy6I
 script NewBaltimore_Trainer_Taraneh { // this isn't working right

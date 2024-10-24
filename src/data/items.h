@@ -14078,21 +14078,6 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
 
-// Novel items
-
-    [ITEM_TECHNIQUE_MANUAL] =
-    {
-        .name = HANDLE_EXPANDED_ITEM_NAME("Move Manual", "Technique Manual"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "A manual for\n"
-            "recording move\n"
-            "information."),
-        .importance = 1,
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TechniqueManual,
-        .iconPic = gItemIcon_TownMap,
-        .iconPalette = gItemIconPalette_TownMap,
-    },
 };
+
+// Novel items

@@ -16,7 +16,6 @@
 #include "constants/maps.h"
 #include "constants/pokemon.h"
 #include "constants/easy_chat.h"
-#include "constants/technique_manual.h"
 #include "constants/trainer_hill.h"
 #include "constants/items.h"
 #include "config/save.h"
@@ -168,13 +167,6 @@ struct UCoords32
     u32 y;
 };
 
-struct TechniqueManualRecords
-{
-    u16 species[TM_SPECIES_COUNT];
-    u8 counters[TM_COUNTERS_COUNT];
-    u8 flags[1 + (TM_FLAGS_COUNT / 8)];
-};
-
 struct Time
 {
     /*0x00*/ s16 days;
@@ -182,17 +174,6 @@ struct Time
     /*0x03*/ s8 minutes;
     /*0x04*/ s8 seconds;
 };
-
-
-struct SaveBlock3
-{
-    struct TechniqueManualRecords techniqueManual;
-#if OW_USE_FAKE_RTC
-    struct Time fakeRTC;
-#endif
-};
-
-extern struct SaveBlock3 *gSaveBlock3Ptr;
 
 struct Pokedex
 {
@@ -207,6 +188,15 @@ struct Pokedex
     /*0x10*/ u8 filler[0x68]; // Previously Dex Flags, feel free to remove.
 #endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK2
 };
+
+struct SaveBlock3
+{
+    #if OW_USE_FAKE_RTC
+        struct Time fakeRTC;
+    #endif
+};
+
+extern struct SaveBlock3 *gSaveBlock3Ptr;
 
 struct PokemonJumpRecords
 {
