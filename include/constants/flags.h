@@ -519,7 +519,7 @@
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
-// Mystery Gift Flags (Unknown)
+// Mystery Gift Flags, used by Mystery Gift Code System
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
 #define FLAG_MYSTERY_GIFT_1                  0x1E5
 #define FLAG_MYSTERY_GIFT_2                  0x1E6
