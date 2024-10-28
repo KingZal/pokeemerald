@@ -175,6 +175,16 @@ struct Time
     /*0x04*/ s8 seconds;
 };
 
+
+struct SaveBlock3
+{
+#if OW_USE_FAKE_RTC
+    struct Time fakeRTC;
+#endif
+};
+
+extern struct SaveBlock3 *gSaveBlock3Ptr;
+
 struct Pokedex
 {
     /*0x00*/ u8 order;
@@ -188,15 +198,6 @@ struct Pokedex
     /*0x10*/ u8 filler[0x68]; // Previously Dex Flags, feel free to remove.
 #endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK2
 };
-
-struct SaveBlock3
-{
-    #if OW_USE_FAKE_RTC
-        struct Time fakeRTC;
-    #endif
-};
-
-extern struct SaveBlock3 *gSaveBlock3Ptr;
 
 struct PokemonJumpRecords
 {
