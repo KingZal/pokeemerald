@@ -95,7 +95,8 @@
     "Underwater_Route125",
     "NewBaltimoreCity",
     "NewBaltimoreCity_NE",
-    "NewBaltimoreCity_SE"
+    "NewBaltimoreCity_SE",
+    "NewBaltimoreCity_Border"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

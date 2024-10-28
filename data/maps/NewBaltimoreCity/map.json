@@ -17,6 +17,11 @@
       "map": "MAP_NEW_BALTIMORE_CITY_NE",
       "offset": 18,
       "direction": "right"
+    },
+    {
+      "map": "MAP_NEW_BALTIMORE_CITY_BORDER",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [

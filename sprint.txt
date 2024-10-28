@@ -7,15 +7,13 @@ eight gyms and the elite four? Do we have to?
 
 To-Do List:
 -Fix trainer
--Replace border trees to remove secret base, or change tile property
 -Remove gym badge requirements
--Increase XP gain (did I do that? no seriously)
--Can we edit metatile property for one in-game tile?
 
 Further down the road To-Do List:
 -Go through a porymap tileset tutorial
 -If not gym members, who?
 -Create trainspotting side quest (can't test this until we unlock Dive)
+-Can we edit metatile property for one in-game tile?
 
 Exploration Ideas:
 -Mark Renton: "I accidentally flushed my [key item] down the toilet. Can you help me fish it out?" 
@@ -35,9 +33,6 @@ Kid Ideas:
 -A known villain
 -On a quest to beat all eight region gyms. Eventually becomes the Elite Four champion.
 
-Added carpet to protagonist's bedroom. Now to add secret side hallway with no music, with door that gives the message 
-"You are not ready yet."
-
 Location ideas:
 -Strip mall with a gym inside and some unusuable boutique stores
 -Market District (where you can find move deleter, move reminder, etc.)
@@ -50,7 +45,7 @@ Character ideas:
 
 Script Ideas:
 -Black screen followed by textbox showing baseball/football play by play
--Vanilla intro is followed up by black screen that says "Twenty years have passed. It's now the new generation's turn." 
+-Vanilla intro is followed up by black screen that says "Twenty years have passed. It is now the new generation's turn." 
     -("Or is it?")
 
 Starters:

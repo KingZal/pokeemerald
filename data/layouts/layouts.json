@@ -4500,6 +4500,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Trainspotting_Cavern/border.bin",
       "blockdata_filepath": "data/layouts/Trainspotting_Cavern/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_BORDER",
+      "name": "NewBaltimoreCity_Border_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NewBaltimoreCity_Border/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_Border/map.bin"
     }
   ]
 }
