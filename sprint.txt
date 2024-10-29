@@ -1,6 +1,9 @@
 Remember, to open the project: open Powershell in Admin(?), run some update command to start Ubuntu, move to decomps folder using
 cd Documents/decomps/pokeemerald-expansion (or something along those lines)
 
+The premise: Run errands around New Baltimore City while your daughter goes off on an epic pokemon adventure, 
+beating Elite Fours and Battle Frontiers and tournaments around the world. She calls you on occasion to muse 
+about her journey.
 The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in 
 eight gyms and the elite four? Do we have to?
 
@@ -8,12 +11,21 @@ eight gyms and the elite four? Do we have to?
 To-Do List:
 -Fix trainer
 -Remove gym badge requirements
+-Draw up three quarter city - I don't see a need for the bottom left corner
+
+Stuff I want to do: Create a rooftop map for protagonist's apartment. Add new television scripts. Learn how flags work. 
 
 Further down the road To-Do List:
 -Go through a porymap tileset tutorial
 -If not gym members, who?
 -Create trainspotting side quest (can't test this until we unlock Dive)
 -Can we edit metatile property for one in-game tile?
+
+Demo Idea:
+-Talk to a guy, which activates flag
+-Receive phone call from your kid
+-Cut to black screen, with Vin Scully commentary
+-Teleport player to front of TV
 
 Exploration Ideas:
 -Mark Renton: "I accidentally flushed my [key item] down the toilet. Can you help me fish it out?" 
@@ -64,6 +76,7 @@ Jealousy Ideas:
 -You are a parent. You have a daughter and a stay-at-home brother who helps take care of the household. Whatever pokemon you pick, 
 your daughter picks the opposite. Then they go on the run, and you have to chase them across Hoenn.
 -Indoors project. You are inside a tower and there's a tournament, or something. 
+-Add FARSI lettering to game...don't think this is possible...
 
 "This is a hold up...give me your high school ring!"
 "You know what I'd look like with blonde hair, Althea? Like a grilled cheese sandwich!"

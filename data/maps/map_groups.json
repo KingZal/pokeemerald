@@ -96,7 +96,8 @@
     "NewBaltimoreCity",
     "NewBaltimoreCity_NE",
     "NewBaltimoreCity_SE",
-    "NewBaltimoreCity_Border"
+    "NewBaltimoreCity_Border",
+    "NewBaltimoreCity_Market"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

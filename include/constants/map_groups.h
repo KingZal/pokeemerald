@@ -67,6 +67,7 @@
 #define MAP_NEW_BALTIMORE_CITY_NE     (58 | (0 << 8))
 #define MAP_NEW_BALTIMORE_CITY_SE     (59 | (0 << 8))
 #define MAP_NEW_BALTIMORE_CITY_BORDER (60 | (0 << 8))
+#define MAP_NEW_BALTIMORE_CITY_MARKET (61 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F        (0 | (1 << 8))

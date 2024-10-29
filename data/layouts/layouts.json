@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/NewBaltimoreCity_Border/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity_Border/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_MARKET",
+      "name": "NewBaltimoreCity_Market_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NewBaltimoreCity_Market/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_Market/map.bin"
     }
   ]
 }

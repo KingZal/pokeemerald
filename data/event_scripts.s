@@ -1296,3 +1296,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/Trainspotting_Cavern/scripts.inc"
 
 	.include "data/maps/NewBaltimoreCity_Border/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_Market/scripts.inc"

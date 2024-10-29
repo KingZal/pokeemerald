@@ -14,14 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_NEW_BALTIMORE_CITY_NE",
+      "map": "MAP_NEW_BALTIMORE_CITY_BORDER",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NEW_BALTIMORE_CITY_SE",
       "offset": 18,
       "direction": "right"
     },
     {
-      "map": "MAP_NEW_BALTIMORE_CITY_BORDER",
+      "map": "MAP_NEW_BALTIMORE_CITY_MARKET",
       "offset": 0,
-      "direction": "left"
+      "direction": "down"
     }
   ],
   "object_events": [
