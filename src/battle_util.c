@@ -4708,6 +4708,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_PLAYYTIME:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_ATK, 2, TRUE);
+                SET_STATCHANGER(STAT_SPATK, 2, TRUE);
+                SET_STATCHANGER(STAT_DEF, 2, TRUE);
+                SET_STATCHANGER(STAT_SPDEF, 2, TRUE);
+                BattleScriptPushCursorAndCallback(BattleScript_PlayytimeActivates);
+                effect++;
+            }
+            break;
         case ABILITY_SUPERSWEET_SYRUP:
             if (!gSpecialStatuses[battler].switchInAbilityDone
                     && !(gBattleStruct->supersweetSyrup[GetBattlerSide(battler)] & gBitTable[gBattlerPartyIndexes[battler]]))

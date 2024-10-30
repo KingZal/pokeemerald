@@ -11,7 +11,6 @@ eight gyms and the elite four? Do we have to?
 To-Do List:
 -Fix trainer
 -Remove gym badge requirements
--Draw up three quarter city - I don't see a need for the bottom left corner
 
 Stuff I want to do: Create a rooftop map for protagonist's apartment. Add new television scripts. Learn how flags work. 
 
@@ -68,9 +67,13 @@ Poison: Ghastly
 Ground: Larvitar
 
 er...okay, how about: Larvitar vs. Gible vs. Ralts or Alolan Sandshrew ...no
-But I edited Alolan Sandshrew to give him some better stats, later I'll give him new moves. Appears as though his learnset is different depending on the gen
+But I edited Alolan Sandshrew to give him some better stats, later I'll give him new moves. Appears as though 
+his learnset is different depending on the gen
 
 https://github.com/pret/pokeemerald/blob/master/src/main_menu.c#L1484 for removing birch intro? haven't looked at it yet
+
+Ability Ideas
+-Executioner's Tax: Every pokemon you knock out increases your attack
 
 Jealousy Ideas:
 -You are a parent. You have a daughter and a stay-at-home brother who helps take care of the household. Whatever pokemon you pick, 

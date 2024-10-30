@@ -2608,4 +2608,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_PLAYYTIME] =
+    {
+        .name = _("Playytime"),
+        .description = COMPOUND_STRING("A ferocious pit presence."),
+        .aiRating = 7,
+    },
 };

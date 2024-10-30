@@ -20,13 +20,8 @@
     },
     {
       "map": "MAP_NEW_BALTIMORE_CITY_SE",
-      "offset": 18,
-      "direction": "right"
-    },
-    {
-      "map": "MAP_NEW_BALTIMORE_CITY_MARKET",
       "offset": 0,
-      "direction": "down"
+      "direction": "right"
     }
   ],
   "object_events": [
