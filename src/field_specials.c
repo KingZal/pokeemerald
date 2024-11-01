@@ -485,6 +485,31 @@ bool32 ShouldDoRivalRayquazaCall(void)
     return TRUE;
 }
 
+bool32 ShouldDoTestPhoneCall(void)
+{
+    if (FlagGet(FLAG_TEST_CALL_0x265))
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_TEST_CALL_STEP_COUNTER)) < 2)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
+    else
+    {
+        return FALSE;
+    }
+
+    return TRUE;    
+}
+
 u8 GetLinkPartnerNames(void)
 {
     u8 i;

@@ -8,11 +8,7 @@ The setting: One big city, one big mountain, one port town. Easy! The question i
 eight gyms and the elite four? Do we have to?
 
 
-To-Do List:
--Fix trainer
--Remove gym badge requirements
 
-Stuff I want to do: Create a rooftop map for protagonist's apartment. Add new television scripts. Learn how flags work. 
 
 Further down the road To-Do List:
 -Go through a porymap tileset tutorial

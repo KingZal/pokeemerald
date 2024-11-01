@@ -55,34 +55,66 @@ NewBaltimore_Outside_Trainer::
 # 51 "data/maps/NewBaltimoreCity/scripts.pory"
 	msgbox NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT
 # 52 "data/maps/NewBaltimoreCity/scripts.pory"
+	setflag FLAG_TEST_CALL_0x265
+# 53 "data/maps/NewBaltimoreCity/scripts.pory"
 	release
 	return
 
 
 NewBaltimore_You_Did_It::
-# 62 "data/maps/NewBaltimoreCity/scripts.pory"
-	lock
 # 63 "data/maps/NewBaltimoreCity/scripts.pory"
-	faceplayer
+	lock
 # 64 "data/maps/NewBaltimoreCity/scripts.pory"
-	msgbox NewBaltimore_Trainer_Done, MSGBOX_DEFAULT
+	faceplayer
 # 65 "data/maps/NewBaltimoreCity/scripts.pory"
+	msgbox NewBaltimore_Trainer_Done, MSGBOX_DEFAULT
+# 66 "data/maps/NewBaltimoreCity/scripts.pory"
 	release
 	return
 
 
-NewBaltimore_Trainer_Taraneh::
-# 75 "data/maps/NewBaltimoreCity/scripts.pory"
-	trainerbattle_single TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro
-# 76 "data/maps/NewBaltimoreCity/scripts.pory"
-	msgbox Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE
+rayquaza_call_test::
+# 70 "data/maps/NewBaltimoreCity/scripts.pory"
+	lock
+# 71 "data/maps/NewBaltimoreCity/scripts.pory"
+	setflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
+# 72 "data/maps/NewBaltimoreCity/scripts.pory"
+	msgbox rayquaza_call_test_Text_0
+# 73 "data/maps/NewBaltimoreCity/scripts.pory"
+	release
+	return
+
+
+Test_Call_Script::
 # 77 "data/maps/NewBaltimoreCity/scripts.pory"
+	lockall
+# 78 "data/maps/NewBaltimoreCity/scripts.pory"
+	pokenavcall Test_Call_Text
+# 79 "data/maps/NewBaltimoreCity/scripts.pory"
+	waitmessage
+# 80 "data/maps/NewBaltimoreCity/scripts.pory"
+	clearflag FLAG_TEST_CALL_0x265
+# 81 "data/maps/NewBaltimoreCity/scripts.pory"
+	releaseall
+	end
+
+
+NewBaltimore_Trainer_Taraneh::
+# 96 "data/maps/NewBaltimoreCity/scripts.pory"
+	trainerbattle_single TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro
+# 97 "data/maps/NewBaltimoreCity/scripts.pory"
+	msgbox Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE
+# 98 "data/maps/NewBaltimoreCity/scripts.pory"
 	waitmessage
 	end
 
 
-# 103 "data/maps/NewBaltimoreCity/scripts.pory"
+# 124 "data/maps/NewBaltimoreCity/scripts.pory"
 
+
+rayquaza_call_test_Text_0:
+# 72 "data/maps/NewBaltimoreCity/scripts.pory"
+	.string "Stupid snake...$"
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis::
 # 34 "data/maps/NewBaltimoreCity/scripts.pory"
@@ -97,26 +129,30 @@ Mandy::
 	.string "Talk to Mandy first.$"
 
 NewBaltimore_Trainer_EZ_HOE::
-# 55 "data/maps/NewBaltimoreCity/scripts.pory"
+# 56 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "Easy come,\n"
 	.string "Easy go,\l"
 	.string "Easily I shoot you hoe.$"
 
+Test_Call_Text::
+# 85 "data/maps/NewBaltimoreCity/scripts.pory"
+	.string "Hi mom!$"
+
 NewBaltimore_Trainer_Done::
-# 68 "data/maps/NewBaltimoreCity/scripts.pory"
+# 89 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "Congratulations!$"
 
 Trainer_Taraneh_Intro::
-# 83 "data/maps/NewBaltimoreCity/scripts.pory"
+# 104 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "There is a time and place\n"
 	.string "for trainer battles.\p"
 	.string "Any time, any place.$"
 
 Trainer_Taraneh_Outro::
-# 89 "data/maps/NewBaltimoreCity/scripts.pory"
+# 110 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "You got me!$"
 
 Trainer_Taraneh_Post_Battle::
-# 93 "data/maps/NewBaltimoreCity/scripts.pory"
+# 114 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "I'd rematch you but I\n"
 	.string "haven't figured it out yet.$"

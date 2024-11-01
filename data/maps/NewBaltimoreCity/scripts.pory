@@ -49,6 +49,7 @@ script NewBaltimore_Outside_Trainer {
 	lock
 	faceplayer
 	msgbox (NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT)
+	setflag(FLAG_TEST_CALL_0x265)
 	release
 }
 
@@ -63,6 +64,26 @@ script NewBaltimore_You_Did_It { // this trainer disappears when the Buddy flag 
 	faceplayer
 	msgbox (NewBaltimore_Trainer_Done, MSGBOX_DEFAULT)
 	release
+}
+
+script rayquaza_call_test {
+	lock
+	setflag(FLAG_DEFEATED_MAGMA_SPACE_CENTER)
+	msgbox("Stupid snake...")
+	release
+}
+
+script Test_Call_Script {
+	lockall
+	pokenavcall(Test_Call_Text) 
+	waitmessage
+	clearflag(FLAG_TEST_CALL_0x265)
+	releaseall
+	end
+}
+
+text Test_Call_Text {
+	"Hi mom!"
 }
 
 text NewBaltimore_Trainer_Done {
