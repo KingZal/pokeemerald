@@ -29,6 +29,8 @@ Demo Idea:
 Exploration Ideas:
 -Mark Renton: "I accidentally flushed my [key item] down the toilet. Can you help me fish it out?" 
 Trainspotting reference - toilet (use placeholder for now) leads to underwater dungeon. 
+    -On second thought after rewatching the scene, I think making a literal toilet->dungeon level 
+    goes against the purpose of the scene...
 -Seedy basements with ghost and poison pokemon
 -Tougher pokemon like houndooms can be found in seedier parts of the city
 

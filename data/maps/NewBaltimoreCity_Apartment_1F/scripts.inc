@@ -8,17 +8,19 @@ NewBaltimore_Apartment_Trainer::
 # 5 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
 	faceplayer
 # 6 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
-	msgbox NewBaltimore_Apartment_Narrow_Head, MSGBOX_DEFAULT
+	setflag FLAG_BUDDY_0x264
 # 7 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
+	msgbox NewBaltimore_Apartment_Narrow_Head, MSGBOX_DEFAULT
+# 8 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
 	release
 	return
 
 
-# 16 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
+# 17 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
 
 
 NewBaltimore_Apartment_Narrow_Head::
-# 10 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
+# 11 "data/maps/NewBaltimoreCity_Apartment_1F/scripts.pory"
 	.string "It's like,\n"
 	.string "My heads numb,\l"
 	.string "Today...$"

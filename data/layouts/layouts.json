@@ -4486,7 +4486,7 @@
       "name": "NewBaltimoreCity_House_Trainspotting_2_Layout",
       "width": 6,
       "height": 6,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/NewBaltimoreCity_House_Trainspotting_2/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity_House_Trainspotting_2/map.bin"
@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/NewBaltimoreCity_Market/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity_Market/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_HOME",
+      "name": "NewBaltimoreCity_Home_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/NewBaltimoreCity_Home/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_Home/map.bin"
     }
   ]
 }

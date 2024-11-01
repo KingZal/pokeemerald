@@ -23,7 +23,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_HOME",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
@@ -36,6 +49,14 @@
       "elevation": 0,
       "item": "ITEM_LINKING_CORD",
       "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NewBaltimoreCity_SE_Trainspotting_HouseSign"
     }
   ]
 }

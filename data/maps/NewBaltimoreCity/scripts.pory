@@ -14,16 +14,19 @@ mapscripts NewBaltimoreCity_MapScripts {}
 script NewBaltimore_TM_Gift {
 	lock
 	faceplayer
-	if (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
-		msgbox(Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT) // placeholder
+	if(!flag(FLAG_RECEIVED_TM_FLAMETHROWER) && !flag(FLAG_BUDDY_0x264)) {
+		msgbox(Mandy, MSGBOX_DEFAULT)
+	}
+	elif (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
+		msgbox(Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT)
 		giveitem(ITEM_TM_FLAMETHROWER)
+		setflag(FLAG_RECEIVED_TM_FLAMETHROWER)
 	} elif (var(VAR_RESULT) == FALSE) {
 		goto(Common_EventScript_ShowBagIsFull)		
 	}
 	else {
 		msgbox (NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT)
 	}
-	setflag(FLAG_RECEIVED_TM_FLAMETHROWER)
 	release
 	end
 }
@@ -34,6 +37,10 @@ text Route104_Text_LikeFillingMouthWithSeedsTakeThis {
 	"You can have this, so you try it out!\p"
 	"Use it on a POKéMON, and it will learn\n"
 	"a move for setting shit on fire.$"
+}
+
+text Mandy {
+	"Talk to Mandy first." // Narrow Head NPC in apartment - sets flag
 }
 	
 
@@ -51,7 +58,7 @@ text NewBaltimore_Trainer_EZ_HOE {
     "Easily I shoot you hoe."
 }
 
-script NewBaltimore_You_Did_It { 
+script NewBaltimore_You_Did_It { // this trainer disappears when the Buddy flag is set.
 	lock
 	faceplayer
 	msgbox (NewBaltimore_Trainer_Done, MSGBOX_DEFAULT)

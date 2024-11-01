@@ -1298,3 +1298,5 @@ MysteryGift_Text_ReceivedGiftMon:
 	.include "data/maps/NewBaltimoreCity_Border/scripts.inc"
 
 	.include "data/maps/NewBaltimoreCity_Market/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_Home/scripts.inc"

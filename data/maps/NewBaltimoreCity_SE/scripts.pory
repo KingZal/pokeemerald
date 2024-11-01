@@ -1,0 +1,15 @@
+mapscripts NewBaltimoreCity_SE_MapScripts {
+
+}
+
+text Trainspotting_HouseSign {
+    "RENTON'S HOUSE"
+}
+
+raw `
+
+NewBaltimoreCity_SE_Trainspotting_HouseSign::
+	msgbox Trainspotting_HouseSign, MSGBOX_SIGN
+	end
+
+`

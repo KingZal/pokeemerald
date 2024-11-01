@@ -80,6 +80,7 @@
 #define MAP_NEW_BALTIMORE_CITY_POKEMON_CENTER        (7 | (1 << 8))
 #define MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING   (8 | (1 << 8))
 #define MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING_2 (9 | (1 << 8))
+#define MAP_NEW_BALTIMORE_CITY_HOME                  (10 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))

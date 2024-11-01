@@ -12,12 +12,31 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_TRAINSPOTTING_CAVERN",
+      "offset": 0,
+      "direction": "dive"
+    }
+  ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 2,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

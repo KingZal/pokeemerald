@@ -3,6 +3,7 @@ mapscripts NewBaltimoreCity_Apartment_1F_MapScripts {}
 script NewBaltimore_Apartment_Trainer {
 	lock
 	faceplayer
+	setflag(FLAG_BUDDY_0x264)
 	msgbox (NewBaltimore_Apartment_Narrow_Head, MSGBOX_DEFAULT)
 	release
 }
