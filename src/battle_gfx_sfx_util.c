@@ -19,6 +19,7 @@
 #include "party_menu.h"
 #include "m4a.h"
 #include "decompress.h"
+#include "dynamic_palettes.h"
 #include "data.h"
 #include "palette.h"
 #include "contest.h"
@@ -26,7 +27,7 @@
 #include "constants/rgb.h"
 #include "constants/battle_palace.h"
 #include "constants/battle_move_effects.h"
-
+#include "constants/trainers.h"
 
 extern const struct CompressedSpriteSheet gSpriteSheet_EnemyShadow;
 extern const struct SpriteTemplate gSpriteTemplate_EnemyShadow;
@@ -656,7 +657,24 @@ void DecompressTrainerFrontPic(u16 frontPicId, u8 battler)
     LoadCompressedSpritePalette(&gTrainerSprites[frontPicId].palette);
 }
 
-void DecompressTrainerBackPic(u16 backPicId, u8 battler)
+void DecompressTrainerBackPic(u16 backPicId, u8 battlerId)
+{
+    u8 position = GetBattlerPosition(battlerId);
+    DecompressPicFromTable_2(&gTrainerBackPicTable[backPicId],
+                             gMonSpritesGfxPtr->sprites.ptr[position],
+                             SPECIES_NONE);
+
+    // DYNPAL: Override pallete load for player back sprite (UPDATE IF USING RHH EXPANSION)
+    if (backPicId == TRAINER_BACK_PIC_BRENDAN || backPicId == TRAINER_BACK_PIC_MAY) {
+        DynPal_LoadPaletteByOffset(sDynPalPlayerBattleBack, OBJ_PLTT_ID(battlerId));
+    }
+    else {
+        LoadCompressedPalette(gTrainerBackPicPaletteTable[backPicId].data,
+            OBJ_PLTT_ID(battlerId), PLTT_SIZE_4BPP);
+    }
+}
+
+void BattleGfxSfxDummy3(u8 gender)
 {
     u8 position = GetBattlerPosition(battler);
     DecompressPicFromTable(&gTrainerBacksprites[backPicId].backPic,
