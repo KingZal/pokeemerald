@@ -1,11 +1,7 @@
 Remember, to open the project: open Powershell in Admin(?), run some update command to start Ubuntu, move to decomps folder using
 cd Documents/decomps/pokeemerald-expansion (or something along those lines)
 
-The premise: Run errands around New Baltimore City while your daughter goes off on an epic pokemon adventure, 
-beating Elite Fours and Battle Frontiers and tournaments around the world. She calls you on occasion to muse 
-about her journey.
-The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in 
-eight gyms and the elite four? Do we have to?
+
 
 
 
@@ -13,7 +9,7 @@ eight gyms and the elite four? Do we have to?
 Further down the road To-Do List:
 -Go through a porymap tileset tutorial
 -If not gym members, who?
--Create trainspotting side quest (can't test this until we unlock Dive)
+-Create trainspotting side quest
 -Can we edit metatile property for one in-game tile?
 
 Demo Idea:

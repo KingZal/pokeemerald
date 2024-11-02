@@ -1,0 +1,21 @@
+mapscripts NewBaltimoreCity_Home_MapScripts {}
+
+script trainer_1 {
+    lockall
+    msgbox("I'm number one.")
+    releaseall
+}
+
+script trainer_2 {
+    lockall
+    msgbox("I'm number two.")
+    releaseall
+}
+
+script trainer_3 {
+    lockall
+    msgbox("I'm number three.")
+    releaseall
+}
+
+// figure out how to make these trainers appear one at a time. fucking flags, how do they work?
