@@ -42199,19 +42199,64 @@ F_TRAINER_FEMALE |
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 16886
         .doubleBattle = FALSE,
-        .partySize = 1,
+#line 16887
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
-#line 16888
-            .species = SPECIES_SNIVY,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 16890
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 30, 0, 0),
 #line 16889
+            .species = SPECIES_SNIVY,
+#line 16889
+            .gender = TRAINER_MON_FEMALE,
+#line 16893
+            .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 2),
+#line 16895
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 16890
+            .ability = ABILITY_OVERGROW,
+#line 16891
             .lvl = 5,
-            .nature = NATURE_HARDY,
+#line 16894
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 16892
+            .teraType = TYPE_GRASS,
+            .moves = {
+#line 16895
+                MOVE_TACKLE,
+                MOVE_LEER,
+                MOVE_VINE_WHIP,
+            },
+            },
+            {
+#line 16899
+            .species = SPECIES_EEVEE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16899
+            .heldItem = ITEM_LEFTOVERS,
+#line 16904
+            .ev = TRAINER_PARTY_EVS(252, 0, 4, 252, 0, 0),
+#line 16906
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 16900
+            .ability = ABILITY_ANTICIPATION,
+#line 16901
+            .lvl = 15,
+#line 16905
+            .nature = NATURE_HARDY,
+#line 16902
+            .isShiny = TRUE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 16903
+            .teraType = TYPE_NORMAL,
+            .moves = {
+#line 16906
+                MOVE_BODY_SLAM,
+                MOVE_ROAR,
+                MOVE_BITE,
+                MOVE_SUBSTITUTE,
+            },
             },
         },
     },
