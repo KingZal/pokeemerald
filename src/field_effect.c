@@ -901,15 +901,15 @@ u8 CreateTrainerSprite(u8 trainerSpriteID, s16 x, s16 y, u8 subpriority, u8 *buf
     // NEEDS CHANGES IF USING RHH EXPANSION
     if (trainerSpriteID == TRAINER_PIC_BRENDAN || trainerSpriteID == TRAINER_PIC_MAY)
     {
-        DynPal_LoadPaletteByTag(sDynPalPlayerBattleFront, gTrainerFrontPicPaletteTable[trainerSpriteID].tag);
+        DynPal_LoadPaletteByTag(sDynPalPlayerBattleFront, gTrainerSprites[trainerSpriteID].palette.tag);
     }
     else
     {
-        LoadCompressedSpritePaletteOverrideBuffer(&gTrainerFrontPicPaletteTable[trainerSpriteID], buffer);
+        LoadCompressedSpritePaletteOverrideBuffer(&gTrainerSprites[trainerSpriteID].palette, buffer);
     }
-    LoadCompressedSpriteSheetOverrideBuffer(&gTrainerFrontPicTable[trainerSpriteID], buffer);
-    spriteTemplate.tileTag = gTrainerFrontPicTable[trainerSpriteID].tag;
-    spriteTemplate.paletteTag = gTrainerFrontPicPaletteTable[trainerSpriteID].tag;
+    LoadCompressedSpriteSheetOverrideBuffer(&gTrainerSprites[trainerSpriteID].frontPic, buffer);
+    spriteTemplate.tileTag = gTrainerSprites[trainerSpriteID].frontPic.tag;
+    spriteTemplate.paletteTag = gTrainerSprites[trainerSpriteID].palette.tag;
     spriteTemplate.oam = &sOam_64x64;
     spriteTemplate.anims = gDummySpriteAnimTable;
     spriteTemplate.images = NULL;
