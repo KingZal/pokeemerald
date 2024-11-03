@@ -3325,15 +3325,15 @@ Route121_Text_PatPostBattle:
 	.string "I raise every POKéMON with the same\n"
 	.string "love and care--I don't pick favorites.$"
 
-Route121_Text_MarcelIntro:
+NBC_Text_HoushangIntro:
 	.string "My POKéMON have never tasted defeat!\n"
 	.string "On their next win, I'm entering them\l"
 	.string "in CONTESTS.$"
 
-Route121_Text_MarcelDefeat:
+NBC_Text_HoushangDefeat:
 	.string "Oh, now what happened here?$"
 
-Route121_Text_MarcelPostBattle:
+NBC_Text_HoushangPostBattle:
 	.string "I may have to train my gang some more\n"
 	.string "before entering any CONTEST.$"
 

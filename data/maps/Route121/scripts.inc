@@ -296,16 +296,6 @@ Route121_EventScript_Pat::
 	end
 # 149 "data/maps/Route121/scripts.pory"
 
-# 150 "data/maps/Route121/scripts.pory"
-Route121_EventScript_Marcel::
-# 151 "data/maps/Route121/scripts.pory"
-	trainerbattle_single TRAINER_MARCEL, Route121_Text_MarcelIntro, Route121_Text_MarcelDefeat
-# 152 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE
-# 153 "data/maps/Route121/scripts.pory"
-	end
-# 154 "data/maps/Route121/scripts.pory"
-
 # 155 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Cristin::
 # 156 "data/maps/Route121/scripts.pory"

@@ -16,6 +16,7 @@ script NewBaltimore_TM_Gift {
 	faceplayer
 	if(!flag(FLAG_RECEIVED_TM_FLAMETHROWER) && !flag(FLAG_BUDDY_0x264)) {
 		msgbox(Mandy, MSGBOX_DEFAULT)
+		warp(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3)
 	}
 	elif (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
 		msgbox(Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT)
@@ -52,6 +53,10 @@ script NewBaltimore_Outside_Trainer {
 	setflag(FLAG_TEST_CALL_0x265)
 	release
 }
+
+// script NewBaltimore_Warped {
+// 	warp(MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 9, 3)
+// }
 
 text NewBaltimore_Trainer_EZ_HOE {
     "Easy come,\n"
@@ -121,4 +126,11 @@ text Trainer_Taraneh_Post_Battle {
 // 	msgbox Route133_Text_BeckPostBattle, MSGBOX_AUTOCLOSE
 // 	end
 
-raw ``
+raw `
+
+NewBaltimoreCity_EventScript_Houshang::
+	trainerbattle_single TRAINER_HOUSHANG, NBC_Text_HoushangIntro, NBC_Text_HoushangDefeat
+	msgbox NBC_Text_HoushangPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+`
