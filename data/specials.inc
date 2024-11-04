@@ -559,3 +559,4 @@ gSpecials::
 	def_special DynPal_ShowToneMenuA
 	def_special DynPal_ShowToneMenuB
 	def_special DynPal_ShowToneMenuC
+	def_special CreateWonderTradePokemon
