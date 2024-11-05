@@ -38,6 +38,31 @@ but I swap between different projects so frequently that it helps to just pull u
 
 -
 
+mapscripts ExampleMap_MapScripts{
+    MAP_SCRIPT_ON_TRANSITION: OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: EventScript
+    ]
+}
+
+script OnTransition{
+    if(flag(FLAG_STORY_FLAG)){
+        setvar(VAR_TEMP_0, 1)
+    }
+}
+
+script EventScript{
+    automated script stuff happens here
+    setflag(FLAG_STORY_FLAG)
+    setvar(VAR_TEMP_0, 1)
+}
+
+this makes it so that the first time the player enters the map, the script plays immediately
+the flag gets set during the script, so any time the player enter the map again, 
+MAP_SCRIPT_ON_TRANSITION immediately sets the temp var to 1, stopping the script from playing again
+
+-
+
 // unverified
 Route2_EventScript_BCTim: {
 	trainerbattle_single TRAINER_BC_TIM, Route2_Text_BCTimIntro, Route2_Text_BCTimDefeated
