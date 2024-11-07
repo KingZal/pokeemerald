@@ -1,0 +1,34 @@
+The premise: Run errands around New Baltimore City while your daughter goes off on an epic pokemon adventure, 
+beating Elite Fours and Battle Frontiers and tournaments around the world. She calls you on occasion to muse 
+about her journey. In other words, this is the gist.
+-You do a favor for somebody
+-Your daughter calls to update you
+-You do a favor for somebody
+-Your daughter calls to update you
+-You do a favor for somebody...
+
+The setting: One big city, one big mountain, one port town. Easy! The question is, how are we going to fit in 
+actual pokemon? We'll figure that out later...
+
+
+
+To-Do List:
+-Fix trainer
+-Remove gym badge requirements
+-Figure out fade to black
+-Create trainer hotel
+    -By extension, figure out how to appear/disappear trainers. One, two, three.
+
+Things to do (wondertrade): 
+-Use flags to give better pokemon over time
+-Add daily limit
+-Remove "equal level" aspect
+-Consider...what if we just don't sell pokeballs? To avoid wondertrade spam?
+
+Stuff I want to do: Create a rooftop map for protagonist's apartment building. Add new television scripts. 
+
+Further To-Do List:
+-Figure out how to apply custom palettes to NPCs
+-Add more custom palettes, for skin tones I suppose
+
+I ADDED A PHONE CALL! Wow. 
