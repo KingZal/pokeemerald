@@ -1,5 +1,7 @@
 {
   "group_order": [
+    "gMapGroup_NewBaltimoreCity",
+    "gMapGroup_IndoorNBC",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -34,6 +36,21 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124"
+  ],
+  "gMapGroup_NewBaltimoreCity": [
+    "NewBaltimoreCity",
+    "NewBaltimoreCity_NE",
+    "NewBaltimoreCity_SE",
+    "NewBaltimoreCity_Border",
+    "NewBaltimoreCity_Market"
+  ],
+  "gMapGroup_IndoorNBC": [
+    "NewBaltimoreCity_Apartment_1F",
+    "NewBaltimoreCity_Pokemon_Center",
+    "NewBaltimoreCity_House_Trainspotting",
+    "NewBaltimoreCity_House_Trainspotting_2",
+    "NewBaltimoreCity_Home",
+    "NewBaltimoreCity_Home_Lobby"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -92,12 +109,7 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
-    "NewBaltimoreCity",
-    "NewBaltimoreCity_NE",
-    "NewBaltimoreCity_SE",
-    "NewBaltimoreCity_Border",
-    "NewBaltimoreCity_Market"
+    "Underwater_Route125"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -105,12 +117,7 @@
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab",
-    "LittlerootTown_Brendans_Secret",
-    "NewBaltimoreCity_Apartment_1F",
-    "NewBaltimoreCity_Pokemon_Center",
-    "NewBaltimoreCity_House_Trainspotting",
-    "NewBaltimoreCity_House_Trainspotting_2",
-    "NewBaltimoreCity_Home"
+    "LittlerootTown_Brendans_Secret"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

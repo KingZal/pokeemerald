@@ -1,0 +1,14 @@
+mapscripts NewBaltimoreCity_Home_Lobby_MapScripts {}
+
+text lobby_elevator_broke {
+	format("Don't bother with the elevator, it's not working.")
+}
+
+script Home_Lobby_Greeter {
+    lock
+	faceplayer
+    msgbox(lobby_elevator_broke, MSGBOX_DEFAULT) // MSGBOX_NPC - see LilycoveCity_DepartmentStore_1F_EventScript_Greeter
+    release
+	end
+}
+	

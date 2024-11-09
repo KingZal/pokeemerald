@@ -1313,3 +1313,5 @@ EventScript_End:
 	.include "data/maps/NewBaltimoreCity_Market/scripts.inc"
 
 	.include "data/maps/NewBaltimoreCity_Home/scripts.inc"
+
+	.include "data/maps/NewBaltimoreCity_Home_Lobby/scripts.inc"

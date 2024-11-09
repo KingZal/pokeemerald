@@ -296,79 +296,79 @@ Route121_EventScript_Pat::
 	end
 # 149 "data/maps/Route121/scripts.pory"
 
-# 155 "data/maps/Route121/scripts.pory"
+# 150 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Cristin::
-# 156 "data/maps/Route121/scripts.pory"
+# 151 "data/maps/Route121/scripts.pory"
 	trainerbattle_single TRAINER_CRISTIN_1, Route121_Text_CristinIntro, Route121_Text_CristinDefeat, Route121_EventScript_RegisterCristin
-# 157 "data/maps/Route121/scripts.pory"
+# 152 "data/maps/Route121/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 158 "data/maps/Route121/scripts.pory"
+# 153 "data/maps/Route121/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
-# 159 "data/maps/Route121/scripts.pory"
+# 154 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_CristinPostBattle, MSGBOX_DEFAULT
-# 160 "data/maps/Route121/scripts.pory"
+# 155 "data/maps/Route121/scripts.pory"
 	release
-# 161 "data/maps/Route121/scripts.pory"
+# 156 "data/maps/Route121/scripts.pory"
 	end
-# 162 "data/maps/Route121/scripts.pory"
+# 157 "data/maps/Route121/scripts.pory"
 
-# 163 "data/maps/Route121/scripts.pory"
+# 158 "data/maps/Route121/scripts.pory"
 Route121_EventScript_RegisterCristin::
-# 164 "data/maps/Route121/scripts.pory"
+# 159 "data/maps/Route121/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
-# 165 "data/maps/Route121/scripts.pory"
+# 160 "data/maps/Route121/scripts.pory"
 	waitmovement 0
-# 166 "data/maps/Route121/scripts.pory"
+# 161 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_CristinRegister, MSGBOX_DEFAULT
-# 167 "data/maps/Route121/scripts.pory"
+# 162 "data/maps/Route121/scripts.pory"
 	register_matchcall TRAINER_CRISTIN_1
-# 168 "data/maps/Route121/scripts.pory"
+# 163 "data/maps/Route121/scripts.pory"
 	release
+# 164 "data/maps/Route121/scripts.pory"
+	end
+# 165 "data/maps/Route121/scripts.pory"
+
+# 166 "data/maps/Route121/scripts.pory"
+Route121_EventScript_RematchCristin::
+# 167 "data/maps/Route121/scripts.pory"
+	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
+# 168 "data/maps/Route121/scripts.pory"
+	msgbox Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE
 # 169 "data/maps/Route121/scripts.pory"
 	end
 # 170 "data/maps/Route121/scripts.pory"
 
 # 171 "data/maps/Route121/scripts.pory"
-Route121_EventScript_RematchCristin::
-# 172 "data/maps/Route121/scripts.pory"
-	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
-# 173 "data/maps/Route121/scripts.pory"
-	msgbox Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE
-# 174 "data/maps/Route121/scripts.pory"
-	end
-# 175 "data/maps/Route121/scripts.pory"
-
-# 176 "data/maps/Route121/scripts.pory"
 Route121_Text_OkayMoveOutToMtPyre:
-# 177 "data/maps/Route121/scripts.pory"
+# 172 "data/maps/Route121/scripts.pory"
 	.string "Okay!\n"
-# 178 "data/maps/Route121/scripts.pory"
+# 173 "data/maps/Route121/scripts.pory"
 	.string "We're to move out to MT. PYRE!$"
+# 174 "data/maps/Route121/scripts.pory"
+
+# 175 "data/maps/Route121/scripts.pory"
+Route121_Text_AheadLoomsMtPyre:
+# 176 "data/maps/Route121/scripts.pory"
+	.string "Ahead looms MT. PYRE…\p"
+# 177 "data/maps/Route121/scripts.pory"
+	.string "It is a natural monument to the spirits \n"
+# 178 "data/maps/Route121/scripts.pory"
+	.string "of departed POKéMON…$"
 # 179 "data/maps/Route121/scripts.pory"
 
 # 180 "data/maps/Route121/scripts.pory"
-Route121_Text_AheadLoomsMtPyre:
+Route121_Text_MtPyrePierSign:
 # 181 "data/maps/Route121/scripts.pory"
-	.string "Ahead looms MT. PYRE…\p"
+	.string "MT. PYRE PIER\p"
 # 182 "data/maps/Route121/scripts.pory"
-	.string "It is a natural monument to the spirits \n"
+	.string "…The sign is old and worn out.\n"
 # 183 "data/maps/Route121/scripts.pory"
-	.string "of departed POKéMON…$"
+	.string "The words are barely legible…$"
 # 184 "data/maps/Route121/scripts.pory"
 
 # 185 "data/maps/Route121/scripts.pory"
-Route121_Text_MtPyrePierSign:
-# 186 "data/maps/Route121/scripts.pory"
-	.string "MT. PYRE PIER\p"
-# 187 "data/maps/Route121/scripts.pory"
-	.string "…The sign is old and worn out.\n"
-# 188 "data/maps/Route121/scripts.pory"
-	.string "The words are barely legible…$"
-# 189 "data/maps/Route121/scripts.pory"
-
-# 190 "data/maps/Route121/scripts.pory"
 Route121_Text_SafariZoneSign:
-# 191 "data/maps/Route121/scripts.pory"
+# 186 "data/maps/Route121/scripts.pory"
 	.string "“Filled with rare POKéMON!”\n"
-# 192 "data/maps/Route121/scripts.pory"
+# 187 "data/maps/Route121/scripts.pory"
 	.string "SAFARI ZONE$"

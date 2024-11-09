@@ -66,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
-      "x": 23,
-      "y": 25,
+      "x": 28,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICHU_DOLL",
-      "x": 23,
-      "y": 28,
+      "x": 26,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -106,29 +106,29 @@
   ],
   "warp_events": [
     {
-      "x": 25,
-      "y": 29,
+      "x": 28,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",
       "dest_warp_id": "3"
     },
     {
-      "x": 23,
-      "y": 22,
+      "x": 20,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_NEW_BALTIMORE_CITY_APARTMENT_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 33,
-      "y": 32,
+      "x": 34,
+      "y": 31,
       "elevation": 0,
       "dest_map": "MAP_NEW_BALTIMORE_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 32,
+      "x": 22,
+      "y": 31,
       "elevation": 0,
       "dest_map": "MAP_NEW_BALTIMORE_CITY_POKEMON_CENTER",
       "dest_warp_id": "0"
@@ -138,6 +138,13 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_PACIFIDLOG_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_HOME_LOBBY",
       "dest_warp_id": "0"
     }
   ],

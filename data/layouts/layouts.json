@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/NewBaltimoreCity_Home/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity_Home/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_HOME_LOBBY",
+      "name": "NewBaltimoreCity_Home_Lobby_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/NewBaltimoreCity_Home_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_Home_Lobby/map.bin"
     }
   ]
 }
