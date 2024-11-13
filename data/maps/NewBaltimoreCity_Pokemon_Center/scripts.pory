@@ -24,7 +24,7 @@ script Pokemart_Employee { // no sound effects
 	if(var(VAR_RESULT) == YES) {
 		incrementgamestat(GAME_STAT_USED_POKECENTER)
         special(HealPlayerParty)
-        msgbox("Come again soon.")
+        msgbox("{PLAY_SE MUS_DUMMY}Come again soon.")
         waitmessage
         release
         end

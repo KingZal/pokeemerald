@@ -17,6 +17,7 @@ script NewBaltimore_TM_Gift {
 	if(!flag(FLAG_RECEIVED_TM_FLAMETHROWER) && !flag(FLAG_BUDDY_0x264)) {
 		msgbox(Mandy, MSGBOX_DEFAULT)
 		warpsilent(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3)
+		// warp(MAP_UNDERWATER_ROUTE125, 18, 16)
 	}
 	elif (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
 		msgbox(Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT)
@@ -82,6 +83,7 @@ script Test_Call_Script {
 	lockall
 	pokenavcall(Test_Call_Text) 
 	waitmessage
+	playse(SE_RG_DEOXYS_MOVE)
 	clearflag(FLAG_TEST_CALL_0x265)
 	warpsilent(MAP_NEW_BALTIMORE_CITY_HOME, 9, 3)
 	releaseall

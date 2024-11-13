@@ -12,7 +12,7 @@ script Home_Lobby_Greeter {
     waitmovement(2)
     applymovement(2, Common_Movement_ExclamationMark)
     waitmovement(2)
-    delay(30)
+    delay(40)
 	faceplayer
     msgbox(lobby_elevator_broke, MSGBOX_DEFAULT) // MSGBOX_NPC - see LilycoveCity_DepartmentStore_1F_EventScript_Greeter
     closemessage
@@ -27,4 +27,4 @@ script Home_Lobby_Greeter {
     release
 	end
 }
-	
+// PLAY_SE SE_BANG

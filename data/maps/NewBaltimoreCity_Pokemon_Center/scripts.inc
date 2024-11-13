@@ -63,7 +63,7 @@ Pokemart_Employee_Text_0:
 
 Pokemart_Employee_Text_1:
 # 27 "data/maps/NewBaltimoreCity_Pokemon_Center/scripts.pory"
-	.string "Come again soon.$"
+	.string "{PLAY_SE MUS_DUMMY}Come again soon.$"
 
 Pokemart_Employee_Text_2:
 # 33 "data/maps/NewBaltimoreCity_Pokemon_Center/scripts.pory"
