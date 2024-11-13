@@ -16,7 +16,7 @@ script NewBaltimore_TM_Gift {
 	faceplayer
 	if(!flag(FLAG_RECEIVED_TM_FLAMETHROWER) && !flag(FLAG_BUDDY_0x264)) {
 		msgbox(Mandy, MSGBOX_DEFAULT)
-		warp(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3)
+		warpsilent(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3)
 	}
 	elif (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
 		msgbox(Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT)
@@ -83,6 +83,7 @@ script Test_Call_Script {
 	pokenavcall(Test_Call_Text) 
 	waitmessage
 	clearflag(FLAG_TEST_CALL_0x265)
+	warpsilent(MAP_NEW_BALTIMORE_CITY_HOME, 9, 3)
 	releaseall
 	end
 }

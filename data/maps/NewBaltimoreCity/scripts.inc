@@ -26,7 +26,7 @@ NewBaltimore_TM_Gift_2:
 # 18 "data/maps/NewBaltimoreCity/scripts.pory"
 	msgbox Mandy, MSGBOX_DEFAULT
 # 19 "data/maps/NewBaltimoreCity/scripts.pory"
-	warp MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3
+	warpsilent MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3
 	goto NewBaltimore_TM_Gift_1
 
 NewBaltimore_TM_Gift_3:
@@ -97,31 +97,33 @@ Test_Call_Script::
 # 85 "data/maps/NewBaltimoreCity/scripts.pory"
 	clearflag FLAG_TEST_CALL_0x265
 # 86 "data/maps/NewBaltimoreCity/scripts.pory"
+	warpsilent MAP_NEW_BALTIMORE_CITY_HOME, 9, 3
+# 87 "data/maps/NewBaltimoreCity/scripts.pory"
 	releaseall
 	end
 
 
 NewBaltimore_Trainer_Taraneh::
-# 101 "data/maps/NewBaltimoreCity/scripts.pory"
-	trainerbattle_single TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro
 # 102 "data/maps/NewBaltimoreCity/scripts.pory"
-	msgbox Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro
 # 103 "data/maps/NewBaltimoreCity/scripts.pory"
+	msgbox Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE
+# 104 "data/maps/NewBaltimoreCity/scripts.pory"
 	waitmessage
 	end
 
 
-# 129 "data/maps/NewBaltimoreCity/scripts.pory"
-
 # 130 "data/maps/NewBaltimoreCity/scripts.pory"
 
 # 131 "data/maps/NewBaltimoreCity/scripts.pory"
-NewBaltimoreCity_EventScript_Houshang::
+
 # 132 "data/maps/NewBaltimoreCity/scripts.pory"
-	trainerbattle_single TRAINER_HOUSHANG, NBC_Text_HoushangIntro, NBC_Text_HoushangDefeat
+NewBaltimoreCity_EventScript_Houshang::
 # 133 "data/maps/NewBaltimoreCity/scripts.pory"
-	msgbox NBC_Text_HoushangPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_HOUSHANG, NBC_Text_HoushangIntro, NBC_Text_HoushangDefeat
 # 134 "data/maps/NewBaltimoreCity/scripts.pory"
+	msgbox NBC_Text_HoushangPostBattle, MSGBOX_AUTOCLOSE
+# 135 "data/maps/NewBaltimoreCity/scripts.pory"
 	end
 
 rayquaza_call_test_Text_0:
@@ -147,24 +149,24 @@ NewBaltimore_Trainer_EZ_HOE::
 	.string "Easily I shoot you hoe.$"
 
 Test_Call_Text::
-# 90 "data/maps/NewBaltimoreCity/scripts.pory"
+# 91 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "Hi mom!$"
 
 NewBaltimore_Trainer_Done::
-# 94 "data/maps/NewBaltimoreCity/scripts.pory"
+# 95 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "Congratulations!$"
 
 Trainer_Taraneh_Intro::
-# 109 "data/maps/NewBaltimoreCity/scripts.pory"
+# 110 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "There is a time and place\n"
 	.string "for trainer battles.\p"
 	.string "Any time, any place.$"
 
 Trainer_Taraneh_Outro::
-# 115 "data/maps/NewBaltimoreCity/scripts.pory"
+# 116 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "You got me!$"
 
 Trainer_Taraneh_Post_Battle::
-# 119 "data/maps/NewBaltimoreCity/scripts.pory"
+# 120 "data/maps/NewBaltimoreCity/scripts.pory"
 	.string "I'd rematch you but I\n"
 	.string "haven't figured it out yet.$"

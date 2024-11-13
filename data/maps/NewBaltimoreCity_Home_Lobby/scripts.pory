@@ -1,13 +1,29 @@
 mapscripts NewBaltimoreCity_Home_Lobby_MapScripts {}
 
+// const localid_receptionist = 2;
+
 text lobby_elevator_broke {
 	format("Don't bother with the elevator, it's not working.")
 }
 
 script Home_Lobby_Greeter {
     lock
+    waitmovement(2)
+    waitmovement(2)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(2)
+    delay(30)
 	faceplayer
     msgbox(lobby_elevator_broke, MSGBOX_DEFAULT) // MSGBOX_NPC - see LilycoveCity_DepartmentStore_1F_EventScript_Greeter
+    closemessage
+    waitmovement(5)
+    // fadescreenspeed(FADE_TO_BLACK, 4)
+    fadescreen(FADE_TO_BLACK)
+    msgbox(Mandy, MSGBOX_DEFAULT)
+    closemessage
+    playse(SE_BANG)
+    waitmovement(6)
+    fadescreen(FADE_FROM_BLACK)
     release
 	end
 }
