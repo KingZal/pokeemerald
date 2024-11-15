@@ -1,20 +1,10 @@
 mapscripts NewBaltimoreCity_MapScripts {}
 
-// Route104_EventScript_Boy2::
-// 	lock
-// 	faceplayer
-// 	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route104_EventScript_ReceivedBulletSeed
-// 	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
-// 	giveitem ITEM_TM_BULLET_SEED
-// 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-// 	setflag FLAG_RECEIVED_TM_BULLET_SEED
-// 	release
-// 	end
-
 script NewBaltimore_TM_Gift {
 	lock
 	faceplayer
 	if(!flag(FLAG_RECEIVED_TM_FLAMETHROWER) && !flag(FLAG_BUDDY_0x264)) {
+		// playse(SE_RG_DEOXYS_MOVE)
 		msgbox(Mandy, MSGBOX_DEFAULT)
 		warpsilent(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3)
 		// warp(MAP_UNDERWATER_ROUTE125, 18, 16)
@@ -83,7 +73,6 @@ script Test_Call_Script {
 	lockall
 	pokenavcall(Test_Call_Text) 
 	waitmessage
-	playse(SE_RG_DEOXYS_MOVE)
 	clearflag(FLAG_TEST_CALL_0x265)
 	warpsilent(MAP_NEW_BALTIMORE_CITY_HOME, 9, 3)
 	releaseall

@@ -654,7 +654,7 @@
 
 #define FLAG_BUDDY_0x264  0x264 // Used Flag
 #define FLAG_TEST_CALL_0x265  0x265 // Used Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
+#define FLAG_LAVENDER_0x266  0x266 // Used Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag

@@ -1,28 +1,72 @@
-mapscripts NewBaltimoreCity_Home_Lobby_MapScripts {}
+mapscripts NewBaltimoreCity_Home_Lobby_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: OnTransition
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TEMP_0, 0: EventScript
+	]
 
-// const localid_receptionist = 2;
+}
+
+const localid_receptionist = 2;
+
+script OnTransition {
+	if(flag(FLAG_LAVENDER_0x266)) {
+		setvar(VAR_TEMP_0, 1)
+	}
+}
+
+script EventScript {
+    applymovement(2, Common_Movement_FaceUp)
+    // msgbox("What would you have me do?", MSGBOX_DEFAULT)
+    // closemessage
+    // msgbox("Dye my hair and insist I'm white?", MSGBOX_DEFAULT)
+    // closemessage
+	msgbox(receptionist_opening_rage, MSGBOX_DEFAULT)
+    delay(40)
+    closemessage
+    delay(5)
+    // applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
+    applymovement(OBJ_EVENT_ID_PLAYER, lobby_first_move)
+    delay(25)
+    waitmovement(2)
+    delay(5)
+    playse(SE_BOO)
+    applymovement(2, Common_Movement_ExclamationMark)
+    waitmovement(2)
+    applymovement(2, Common_Movement_FaceDown)
+    delay(40)
+    msgbox(format("S-sorry, you weren't supposed to hear that..."), MSGBOX_DEFAULT)
+    closemessage
+	setflag(FLAG_LAVENDER_0x266)
+	setvar(VAR_TEMP_0, 1)
+}
+
+script lobby_first_move {
+    walk_up
+    walk_up
+    walk_up
+    step_end
+}
 
 text lobby_elevator_broke {
 	format("Don't bother with the elevator, it's not working.")
 }
 
+text receptionist_opening_rage {
+    "What would you have me do?\n"
+    "Dye my hair and insist I'm white?\p"
+    "You know what I'd look like with\nBLONDE hair Althea?\p LIKE A GRILLED CHEESE SANDWICH!"
+}
+
 script Home_Lobby_Greeter {
     lock
-    waitmovement(2)
-    waitmovement(2)
-    applymovement(2, Common_Movement_ExclamationMark)
-    waitmovement(2)
-    delay(40)
 	faceplayer
     msgbox(lobby_elevator_broke, MSGBOX_DEFAULT) // MSGBOX_NPC - see LilycoveCity_DepartmentStore_1F_EventScript_Greeter
     closemessage
-    waitmovement(5)
     // fadescreenspeed(FADE_TO_BLACK, 4)
     fadescreen(FADE_TO_BLACK)
     msgbox(Mandy, MSGBOX_DEFAULT)
     closemessage
     playse(SE_BANG)
-    waitmovement(6)
     fadescreen(FADE_FROM_BLACK)
     release
 	end
