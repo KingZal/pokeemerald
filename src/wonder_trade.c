@@ -620,8 +620,8 @@ void CreateWonderTradePokemon(void)
     // Creates the base of a Pokémon in the first slot of a nonexistent enemy's party.
     CreateMon(&gEnemyParty[0], wonderTradeSpecies, playerMonLevel, USE_RANDOM_IVS, FALSE, 0, OT_ID_PRESET, ((Random() << 16) | Random()));
 
-    // 10% chance of having the generated Wonder Traded 'mon carry an item.
-    if ((Random() % 99) < 10)
+    // 35% chance of having the generated Wonder Traded 'mon carry an item.
+    if ((Random() % 99) < 35)
         newHeldItem = GetValidHeldItemForSpecies(wonderTradeSpecies);
 
     if (playerMonHeldItem == ITEM_NONE)

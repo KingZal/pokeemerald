@@ -1,7 +1,7 @@
 mapscripts NewBaltimoreCity_Home_Lobby_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: OnTransition
 	MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_TEMP_0, 0: EventScript
+		VAR_TEMP_0, 0: EntranceAlthea
 	]
 
 }
@@ -14,7 +14,7 @@ script OnTransition {
 	}
 }
 
-script EventScript {
+script EntranceAlthea {
     applymovement(2, Common_Movement_FaceUp)
     // msgbox("What would you have me do?", MSGBOX_DEFAULT)
     // closemessage
@@ -60,14 +60,18 @@ text receptionist_opening_rage {
 script Home_Lobby_Greeter {
     lock
 	faceplayer
-    msgbox(lobby_elevator_broke, MSGBOX_DEFAULT) // MSGBOX_NPC - see LilycoveCity_DepartmentStore_1F_EventScript_Greeter
-    closemessage
-    // fadescreenspeed(FADE_TO_BLACK, 4)
-    fadescreen(FADE_TO_BLACK)
-    msgbox(Mandy, MSGBOX_DEFAULT)
-    closemessage
-    playse(SE_BANG)
-    fadescreen(FADE_FROM_BLACK)
+    if(!flag(FLAG_BUDDY_0x264)) {
+        msgbox(lobby_elevator_broke, MSGBOX_DEFAULT) // MSGBOX_NPC - see LilycoveCity_DepartmentStore_1F_EntranceAlthea_Greeter
+        closemessage
+        fadescreen(FADE_TO_BLACK)
+        msgbox(Mandy, MSGBOX_DEFAULT)
+        closemessage
+        playse(SE_BANG)
+        fadescreen(FADE_FROM_BLACK)
+    }
+    else {
+        msgbox("It's still not working.", MSGBOX_DEFAULT)
+    }
     release
 	end
 }

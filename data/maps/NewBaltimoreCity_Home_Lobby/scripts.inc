@@ -7,7 +7,7 @@ NewBaltimoreCity_Home_Lobby_MapScripts::
 
 NewBaltimoreCity_Home_Lobby_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 4 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	map_script_2 VAR_TEMP_0, 0, EventScript
+	map_script_2 VAR_TEMP_0, 0, EntranceAlthea
 	.2byte 0
 
 
@@ -22,7 +22,7 @@ OnTransition_1:
 	return
 
 
-EventScript::
+EntranceAlthea::
 # 18 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	applymovement 2, Common_Movement_FaceUp
 # 23 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
@@ -52,7 +52,7 @@ EventScript::
 # 36 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	delay 40
 # 37 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	msgbox EventScript_Text_0, MSGBOX_DEFAULT
+	msgbox EntranceAlthea_Text_0, MSGBOX_DEFAULT
 # 38 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	closemessage
 # 39 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
@@ -80,8 +80,18 @@ Home_Lobby_Greeter::
 # 62 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	faceplayer
 # 63 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	msgbox lobby_elevator_broke, MSGBOX_DEFAULT
+	goto_if_unset FLAG_BUDDY_0x264, Home_Lobby_Greeter_2
+# 73 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	msgbox Home_Lobby_Greeter_Text_0, MSGBOX_DEFAULT
+Home_Lobby_Greeter_1:
+# 75 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	release
+	end
+
+Home_Lobby_Greeter_2:
 # 64 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	msgbox lobby_elevator_broke, MSGBOX_DEFAULT
+# 65 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	closemessage
 # 66 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
@@ -93,15 +103,17 @@ Home_Lobby_Greeter::
 	playse SE_BANG
 # 70 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 71 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	release
-	end
+	goto Home_Lobby_Greeter_1
 
 
-EventScript_Text_0:
+EntranceAlthea_Text_0:
 # 37 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	.string "S-sorry, you weren't supposed to hear\n"
 	.string "that...$"
+
+Home_Lobby_Greeter_Text_0:
+# 73 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	.string "It's still not working.$"
 
 lobby_elevator_broke::
 # 50 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"

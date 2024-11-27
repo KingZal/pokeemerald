@@ -1,5 +1,7 @@
 mapscripts NewBaltimoreCity_MapScripts {}
 
+
+
 script NewBaltimore_TM_Gift {
 	lock
 	faceplayer
@@ -37,12 +39,44 @@ text Mandy {
 	
 
 // turn this into battle later?
-script NewBaltimore_Outside_Trainer { 
-	lock
-	faceplayer
-	msgbox (NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT)
-	setflag(FLAG_TEST_CALL_0x265)
-	release
+// script NewBaltimore_Outside_Trainer { 
+// 	lock
+// 	faceplayer
+// 	msgbox (NewBaltimore_Trainer_EZ_HOE, MSGBOX_DEFAULT)
+// 	setflag(FLAG_TEST_CALL_0x265)
+// 	release
+// }
+
+script NewBaltimore_Outside_Trainer {
+    lock
+    faceplayer
+    random(3)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox(NewBaltimore_Trainer_EZ_HOE)
+        case 1:
+            msgbox(NewBaltimore_Trainer_Done)
+        case 2:
+            msgbox(Trainer_Taraneh_Intro)
+    }
+    release
+}
+
+script NewBaltimore_Outside_Sketchy_Trainer {
+    lock
+    faceplayer
+	// specialvar(VAR_RESULT, GetSlotMachineId)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox("I ain't sayin' nuthin.")
+        case 1:
+            msgbox("I didn't see nuthin.")
+        case 2:
+            msgbox(format("So maybe I was at Tommy Joe's that night. So what?"))
+    	case 3:
+            msgbox(format("Fine, I'll 'fess up. Sonny did it!"))
+    }
+    release
 }
 
 // script NewBaltimore_Warped {
@@ -59,6 +93,20 @@ script NewBaltimore_You_Did_It { // this trainer disappears when the Buddy flag 
 	lock
 	faceplayer
 	msgbox (NewBaltimore_Trainer_Done, MSGBOX_DEFAULT)
+	release
+}
+
+script NewBaltimore_Berry_Fan {
+	lock
+	faceplayer
+	specialvar(VAR_RESULT, PlayerHasBerries)
+	if(var(VAR_RESULT) == TRUE) {
+		msgbox(format("The inner machinations of my berries are an enigma."))
+	}
+	else {
+		msgbox(format("Berries are an important part of any trainer's diet. Here, take one!"))
+		giveitem(ITEM_ENIGMA_BERRY)
+	}
 	release
 }
 

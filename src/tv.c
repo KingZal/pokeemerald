@@ -1630,6 +1630,7 @@ static void TryStartRandomMassOutbreak(void)
     TVShow *show;
 
     if (FlagGet(FLAG_SYS_GAME_CLEAR))
+    //if (FlagGet(FLAG_BUDDY_0x264)) // devil possum
     {
         for (i = 0; i < LAST_TVSHOW_IDX; i++)
         {
