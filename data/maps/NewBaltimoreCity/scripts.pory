@@ -65,16 +65,28 @@ script NewBaltimore_Outside_Trainer {
 script NewBaltimore_Outside_Sketchy_Trainer {
     lock
     faceplayer
-	// specialvar(VAR_RESULT, GetSlotMachineId)
-    switch(var(VAR_RESULT)) {
+	// setvar(VAR_TEMP_0, 0) // this is automatically done i suppose
+    switch(var(VAR_TEMP_0)) {
         case 0:
             msgbox("I ain't sayin' nuthin.")
+			setvar(VAR_TEMP_0, 1)
         case 1:
             msgbox("I didn't see nuthin.")
+			setvar(VAR_TEMP_0, 2)
         case 2:
             msgbox(format("So maybe I was at Tommy Joe's that night. So what?"))
+			setvar(VAR_TEMP_0, 3)
     	case 3:
             msgbox(format("Fine, I'll 'fess up. Sonny did it!"))
+			setvar(VAR_TEMP_0, 4)
+		case 4: // you would need a flag or var to ensure you can't repeat this flow of conversation
+			fadescreenswapbuffers(FADE_TO_BLACK)
+            msgbox(format("Well for Tauros fans there is, of course, cause for celebration tonight after a sixth championship that came"
+			"harder than the others - but there's some anxiousness as well. Who knows how all of this will play out, but it's certainly"
+			"possible that tonight we have seen the last of the Unova Tauros as we've known them. And whether it ends here, or sometime in"
+			" the near future, it'll be noteworthy not only for the breakup of one of the great teams in Pokemon history, but because given"
+			" the current structure of the Pokemon League, it may be quite a while before we see anything like this again."))
+			fadescreenswapbuffers(FADE_FROM_BLACK)
     }
     release
 }
@@ -89,6 +101,14 @@ text NewBaltimore_Trainer_EZ_HOE {
     "Easily I shoot you hoe."
 }
 
+// text Costas { 
+// 	"Well for Tauros fans there is, of course, cause for celebration tonight after a sixth championship that came
+// 	harder than the others - but there's some anxiousness as well. Who knows how all of this will play out, but it's certainly
+// 	possible that tonight we have seen the last of the Unova Tauros as we've known them. And whether it ends here, or sometime in
+// 	the near future, it'll be noteworthy not only for the breakup of one of the great teams in Pokemon history, but because given
+// 	the current structure of the Pokemon League, it may be quite a while before we see anything like this again."
+// }
+
 script NewBaltimore_You_Did_It { // this trainer disappears when the Buddy flag is set.
 	lock
 	faceplayer
@@ -101,7 +121,9 @@ script NewBaltimore_Berry_Fan {
 	faceplayer
 	specialvar(VAR_RESULT, PlayerHasBerries)
 	if(var(VAR_RESULT) == TRUE) {
+		fadescreenswapbuffers(FADE_TO_BLACK)
 		msgbox(format("The inner machinations of my berries are an enigma."))
+		fadescreenswapbuffers(FADE_FROM_BLACK)
 	}
 	else {
 		msgbox(format("Berries are an important part of any trainer's diet. Here, take one!"))

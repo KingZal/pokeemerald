@@ -1,5 +1,29 @@
 mapscripts NewBaltimoreCity_Home_MapScripts {}
 
+script NBC_Home_PC {
+	lockall
+	goto(Home_Computer_On)
+	end
+}
+
+script Home_Computer_On {
+    setvar(VAR_0x8004, PC_LOCATION_OTHER)
+	playse(SE_PC_ON)
+	msgbox(gText_PlayerHouseBootPC, MSGBOX_DEFAULT)
+	special(BedroomPC)
+	waitstate
+	releaseall
+	end
+}
+
+script Home_Computer_Off {
+    setvar(VAR_0x8004, PC_LOCATION_OTHER)
+	playse(SE_PC_OFF)
+	special(DoPCTurnOffEffect)
+	releaseall
+	end
+}
+
 script trainer_1 {
     lockall
     msgbox("I'm number one.")

@@ -7,8 +7,6 @@ script LittlerootTown_Foppy79 {
 
 text LittlerootTown_Foppy79_Speaks {
 	format("There is a pipe bomb in your mailbox.")
-	// "There is a pipe bomb\n"
-	# "in your mailbox.$"
 }
 
 script LittlerootTown_flower_sign {

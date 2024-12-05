@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/NewBaltimoreCity_Home_Lobby/border.bin",
       "blockdata_filepath": "data/layouts/NewBaltimoreCity_Home_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_BALTIMORE_CITY_APARTMENT_SHIP_TEST",
+      "name": "NewBaltimoreCity_ApartmentShipTest_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/NewBaltimoreCity_ApartmentShipTest/border.bin",
+      "blockdata_filepath": "data/layouts/NewBaltimoreCity_ApartmentShipTest/map.bin"
     }
   ]
 }

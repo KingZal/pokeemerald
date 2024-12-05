@@ -74,35 +74,61 @@ lobby_first_move::
 	return
 
 
-Home_Lobby_Greeter::
+znh_hidden::
 # 61 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	lock
+	lockall
 # 62 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	faceplayer
+	msgbox zora_neale_hurston
 # 63 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
-	goto_if_unset FLAG_BUDDY_0x264, Home_Lobby_Greeter_2
+	releaseall
+	return
+
+
+Home_Lobby_Greeter::
+# 72 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	lock
 # 73 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	faceplayer
+# 74 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	goto_if_unset FLAG_BUDDY_0x264, Home_Lobby_Greeter_2
+# 92 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	msgbox Home_Lobby_Greeter_Text_0, MSGBOX_DEFAULT
 Home_Lobby_Greeter_1:
-# 75 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 94 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	release
 	end
 
 Home_Lobby_Greeter_2:
-# 64 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 75 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	msgbox lobby_elevator_broke, MSGBOX_DEFAULT
-# 65 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 76 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	closemessage
-# 66 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 77 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 67 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 78 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	msgbox Mandy, MSGBOX_DEFAULT
-# 68 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 79 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	closemessage
-# 69 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 80 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	playse SE_BANG
-# 70 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 81 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	fadescreen FADE_FROM_BLACK
+# 82 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE01_GET
+# 83 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE02_GET
+# 84 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE03_GET
+# 85 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE04_GET
+# 86 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE05_GET
+# 87 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE06_GET
+# 88 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE07_GET
+# 89 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	setflag FLAG_BADGE08_GET
 	goto Home_Lobby_Greeter_1
 
 
@@ -112,7 +138,7 @@ EntranceAlthea_Text_0:
 	.string "that...$"
 
 Home_Lobby_Greeter_Text_0:
-# 73 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 92 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	.string "It's still not working.$"
 
 lobby_elevator_broke::
@@ -125,3 +151,8 @@ receptionist_opening_rage::
 	.string "What would you have me do?\n"
 	.string "Dye my hair and insist I'm white?\p"
 	.string "You know what I'd look like with\nBLONDE hair Althea?\p LIKE A GRILLED CHEESE SANDWICH!$"
+
+zora_neale_hurston::
+# 66 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	.string "IF YOU ARE SILENT ABOUT YOUR PAIN,\n"
+	.string "THEY'LL KILL YOU AND SAY YOU ENJOYED IT.$"

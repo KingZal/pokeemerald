@@ -57,6 +57,17 @@ text receptionist_opening_rage {
     "You know what I'd look like with\nBLONDE hair Althea?\p LIKE A GRILLED CHEESE SANDWICH!"
 }
 
+script znh_hidden {
+	lockall
+	msgbox(zora_neale_hurston)
+    releaseall
+}
+
+text zora_neale_hurston {
+    "IF YOU ARE SILENT ABOUT YOUR PAIN,\n"
+    "THEY'LL KILL YOU AND SAY YOU ENJOYED IT."
+}
+
 script Home_Lobby_Greeter {
     lock
 	faceplayer
@@ -68,6 +79,14 @@ script Home_Lobby_Greeter {
         closemessage
         playse(SE_BANG)
         fadescreen(FADE_FROM_BLACK)
+        setflag(FLAG_BADGE01_GET)
+        setflag(FLAG_BADGE02_GET)
+        setflag(FLAG_BADGE03_GET)
+        setflag(FLAG_BADGE04_GET)
+        setflag(FLAG_BADGE05_GET)
+        setflag(FLAG_BADGE06_GET)
+        setflag(FLAG_BADGE07_GET)
+        setflag(FLAG_BADGE08_GET)
     }
     else {
         msgbox("It's still not working.", MSGBOX_DEFAULT)

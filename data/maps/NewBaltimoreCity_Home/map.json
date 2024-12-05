@@ -33,14 +33,21 @@
       "x": 2,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_NEW_BALTIMORE_CITY_SE",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_APARTMENT_SHIP_TEST",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NBC_Home_PC"
+    }
   ]
 }

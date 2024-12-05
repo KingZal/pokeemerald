@@ -1,0 +1,12 @@
+mapscripts NewBaltimoreCity_ApartmentShipTest_MapScripts {} 
+
+script sign_player_home {
+	lockall
+	msgbox(label_player_home)
+    releaseall
+}
+
+text label_player_home {
+    "APT 123\n"
+    "{PLAYER}$"
+}

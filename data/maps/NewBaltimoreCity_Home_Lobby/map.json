@@ -55,12 +55,33 @@
       "elevation": 0,
       "dest_map": "MAP_NEW_BALTIMORE_CITY",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_APARTMENT_SHIP_TEST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY_APARTMENT_SHIP_TEST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "znh_hidden"
+    }
   ]
 }

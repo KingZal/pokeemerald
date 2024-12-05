@@ -19,6 +19,7 @@
 #define MAP_NEW_BALTIMORE_CITY_HOUSE_TRAINSPOTTING_2 (3 | (1 << 8))
 #define MAP_NEW_BALTIMORE_CITY_HOME                  (4 | (1 << 8))
 #define MAP_NEW_BALTIMORE_CITY_HOME_LOBBY            (5 | (1 << 8))
+#define MAP_NEW_BALTIMORE_CITY_APARTMENT_SHIP_TEST   (6 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))
