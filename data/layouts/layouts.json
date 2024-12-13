@@ -4444,8 +4444,8 @@
     {
       "id": "LAYOUT_NEW_BALTIMORE_CITY_APARTMENT_1F",
       "name": "NewBaltimoreCity_Apartment_1F_Layout",
-      "width": 25,
-      "height": 4,
+      "width": 27,
+      "height": 6,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/NewBaltimoreCity_Apartment_1F/border.bin",

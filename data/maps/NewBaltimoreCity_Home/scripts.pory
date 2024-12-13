@@ -6,8 +6,10 @@ script NBC_Home_PC {
 	end
 }
 
+// player computer scripts; the grunt work is done in C and mostly untouched as of 12/5/2024
 script Home_Computer_On {
     setvar(VAR_0x8004, PC_LOCATION_OTHER)
+	special(DoPCTurnOnEffect)
 	playse(SE_PC_ON)
 	msgbox(gText_PlayerHouseBootPC, MSGBOX_DEFAULT)
 	special(BedroomPC)
@@ -24,6 +26,42 @@ script Home_Computer_Off {
 	end
 }
 
+script NBC_Child_PC {
+	lock
+	random(3)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox(child_PC_1, MSGBOX_DEFAULT)
+        case 1:
+            msgbox(child_PC_2, MSGBOX_DEFAULT)
+          case 2:
+            msgbox(child_PC_3, MSGBOX_DEFAULT)
+    }
+	playse(SE_PC_OFF)
+	release
+	end
+}
+
+// going to use the name Lynda as a placeholder for now
+text child_PC_1 {
+	"You used to help Lynda with homework here.\p"
+	".............\l"
+	"Better get going."
+}
+
+text child_PC_2 {
+	"Lynda spent so much time researching\n"
+	"different Pokemon here.\p"
+	".............\l"
+	"Better get going."
+}
+
+text child_PC_3 {
+	"Lynda's computer hasn't been used much \n"
+	"since she moved out.\p"
+	".............\l"
+	"Better get going."
+}
 script trainer_1 {
     lockall
     msgbox("I'm number one.")

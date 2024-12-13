@@ -90,6 +90,7 @@ script Home_Lobby_Greeter {
     }
     else {
         msgbox("It's still not working.", MSGBOX_DEFAULT)
+        playse(SE_M_BELLY_DRUM)
     }
     release
 	end

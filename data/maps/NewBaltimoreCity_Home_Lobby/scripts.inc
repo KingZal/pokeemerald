@@ -93,8 +93,10 @@ Home_Lobby_Greeter::
 	goto_if_unset FLAG_BUDDY_0x264, Home_Lobby_Greeter_2
 # 92 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	msgbox Home_Lobby_Greeter_Text_0, MSGBOX_DEFAULT
+# 93 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+	playse SE_M_BELLY_DRUM
 Home_Lobby_Greeter_1:
-# 94 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
+# 95 "data/maps/NewBaltimoreCity_Home_Lobby/scripts.pory"
 	release
 	end
 

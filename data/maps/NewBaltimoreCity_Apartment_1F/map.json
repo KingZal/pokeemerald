@@ -30,70 +30,70 @@
   ],
   "warp_events": [
     {
-      "x": 1,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_BALTIMORE_CITY",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 2,
-      "y": 3,
+      "x": 0,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_NEW_BALTIMORE_CITY",
       "dest_warp_id": "1"
     },
     {
       "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_BALTIMORE_CITY",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 4,
+      "x": 6,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_DEWFORD_TOWN_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 7,
+      "x": 9,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MAUVILLE_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
+      "x": 12,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LAVARIDGE_TOWN_GYM_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 13,
+      "x": 15,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 16,
+      "x": 18,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_FORTREE_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
+      "x": 21,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 22,
+      "x": 24,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_SOOTOPOLIS_CITY_GYM_1F",

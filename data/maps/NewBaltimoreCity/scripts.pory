@@ -9,6 +9,7 @@ script NewBaltimore_TM_Gift {
 		// playse(SE_RG_DEOXYS_MOVE)
 		msgbox(Mandy, MSGBOX_DEFAULT)
 		warpsilent(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 9, 3)
+		// warpsilent(MAP_NEW_BALTIMORE_CITY_APARTMENT_1F, 0) // one input warps player to warp point
 		// warp(MAP_UNDERWATER_ROUTE125, 18, 16)
 	}
 	elif (!flag(FLAG_RECEIVED_TM_FLAMETHROWER)) {
@@ -80,13 +81,14 @@ script NewBaltimore_Outside_Sketchy_Trainer {
             msgbox(format("Fine, I'll 'fess up. Sonny did it!"))
 			setvar(VAR_TEMP_0, 4)
 		case 4: // you would need a flag or var to ensure you can't repeat this flow of conversation
-			fadescreenswapbuffers(FADE_TO_BLACK)
+			fadescreen(FADE_TO_BLACK) // buffer caused problem with warp
             msgbox(format("Well for Tauros fans there is, of course, cause for celebration tonight after a sixth championship that came"
 			"harder than the others - but there's some anxiousness as well. Who knows how all of this will play out, but it's certainly"
 			"possible that tonight we have seen the last of the Unova Tauros as we've known them. And whether it ends here, or sometime in"
 			" the near future, it'll be noteworthy not only for the breakup of one of the great teams in Pokemon history, but because given"
 			" the current structure of the Pokemon League, it may be quite a while before we see anything like this again."))
-			fadescreenswapbuffers(FADE_FROM_BLACK)
+			warpsilent(MAP_NEW_BALTIMORE_CITY_HOME, 9, 3)
+			fadescreen(FADE_FROM_BLACK)
     }
     release
 }
@@ -162,7 +164,6 @@ text NewBaltimore_Trainer_Done {
 script NewBaltimore_Trainer_Taraneh { // this isn't working right
 	trainerbattle_single(TRAINER_TARANEH, Trainer_Taraneh_Intro, Trainer_Taraneh_Outro)
 	msgbox(Trainer_Taraneh_Post_Battle, MSGBOX_AUTOCLOSE)
-	waitmessage
 	end
 	// more trainer macros can be found under event.inc
 	// edit trainer information under trainers.party
