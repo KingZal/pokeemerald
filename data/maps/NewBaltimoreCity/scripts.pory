@@ -87,6 +87,7 @@ script NewBaltimore_Outside_Sketchy_Trainer {
 			"possible that tonight we have seen the last of the Unova Tauros as we've known them. And whether it ends here, or sometime in"
 			" the near future, it'll be noteworthy not only for the breakup of one of the great teams in Pokemon history, but because given"
 			" the current structure of the Pokemon League, it may be quite a while before we see anything like this again."))
+			closemessage
 			warpsilent(MAP_NEW_BALTIMORE_CITY_HOME, 9, 3)
 			fadescreen(FADE_FROM_BLACK)
     }
